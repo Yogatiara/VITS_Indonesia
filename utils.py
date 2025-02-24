@@ -17,6 +17,7 @@ logger = logging
 
 def load_checkpoint(checkpoint_path, model, optimizer=None):
   assert os.path.isfile(checkpoint_path)
+  # checkpoint_dict = torch.load(checkpoint_path, weights_only=True, map_location='cpu')
   checkpoint_dict = torch.load(checkpoint_path, map_location='cpu')
   iteration = checkpoint_dict['iteration']
   learning_rate = checkpoint_dict['learning_rate']
@@ -74,6 +75,31 @@ def latest_checkpoint_path(dir_path, regex="G_*.pth"):
   print(x)
   return x
 
+
+# def scan_checkpoint(dir_path, regex):
+#     f_list = glob.glob(os.path.join(dir_path, regex))
+#     f_list.sort(key=lambda f: int("".join(filter(str.isdigit, f))))
+#     if len(f_list) == 0:
+#         return None
+#     return f_list
+
+
+# def latest_checkpoint_path(dir_path, regex="G_*.pth"):
+#     f_list = scan_checkpoint(dir_path, regex)
+#     if not f_list:
+#         return None
+#     x = f_list[-1]
+#     print(x)
+#     return x
+
+
+# def remove_old_checkpoints(cp_dir, prefixes=['G_*.pth', 'D_*.pth', 'DUR_*.pth']):
+#     for prefix in prefixes:
+#         sorted_ckpts = scan_checkpoint(cp_dir, prefix)
+#         if sorted_ckpts and len(sorted_ckpts) > 3:
+#             for ckpt_path in sorted_ckpts[:-3]:
+#                 os.remove(ckpt_path)
+#                 print("removed {}".format(ckpt_path))
 
 def plot_spectrogram_to_numpy(spectrogram):
   global MATPLOTLIB_FLAG

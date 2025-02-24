@@ -98,3 +98,12 @@ def english_cleaners2(text):
   phonemes = phonemize(text, language='en-us', backend='espeak', strip=True, preserve_punctuation=True, with_stress=True)
   phonemes = collapse_whitespace(phonemes)
   return phonemes
+
+def indonesian_cleaners(text):
+  '''Pipeline for English text, including abbreviation expansion. + punctuation + stress'''
+  text = convert_to_ascii(text)
+  text = lowercase(text)
+  # text = expand_abbreviations(text)
+  phonemes = phonemize(text, language='id', backend='espeak', strip=True, preserve_punctuation=True, with_stress=True)
+  phonemes = collapse_whitespace(phonemes)
+  return phonemes

@@ -1,0 +1,69 @@
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0341.wav|rencana gugatan itu terungkap dalam jumpa pers yang diadakan eks karyawan emoi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0222.wav|bush juga mengumumkan bahwa tiga lembaga perdagangan dan keuangan amerika, sepakat untuk memperomosikan pembangunan di indonesia.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0202.wav|terjadi kesalahan ketik kata mayjen menjadi majyen.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0165.wav|sedang dibicarakan karena belum ada keputusan. kata brigjen edward aritonang.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0101.wav|di rumah itu, sudah tersedia sebuah barak penampungan perempuan perempuan abg.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0284.wav|upja adalah singkatan dari unit pelayanan jasa pertanian.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0274.wav|toni braxton menjadi perempuan penyanyi r&b terbaik.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0070.wav|masyarakat sudah lama merindukan polisi-polisi yang profesional.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0293.wav|uss kitty hawk, yang membawa tujuh puluh pesawat tempur as dikabarkan kini berada di sekitar filipina.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0250.wav|osama bin laden, kini bersembunyi di provinsi afganistan tengah, oruzgan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0162.wav|anwar mengatakan, berdasarkan pengalaman bi masih banyak kendala kendala untuk mencapai gcg.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0325.wav|sekitar lima ribu orang berdemonstrasi sambil berjalan ke taman terkenal, hyde park di trafalgar square.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0106.wav|agenda perjalanan dinas untuk kamtibmas dilakukan setahun sekali.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0266.wav|menkop dan usaha kecil menengah zarkasih nur menggunakan toyota zygnus.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0305.wav|harian  glas javnosti, selalu menyajikan berita-berita tentang dunia politik.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0064.wav|adnan buyung nasution meminta kepada hakim yang mengadili sidang tersebut menerima permohonan praperadilan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0061.wav|manajer hotel le meridien menanyakan apakah peserta setuju pada chauvinisme.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0115.wav|rombongan berangkat dengan mencarter bus damri bernomor polisi l tiga tujuh sembilan cb yang dikemudikan romli.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0178.wav|menteri pertahanan mahfud md, menegaskan pemerintah menolak keinginan merdeka atau menggelar referendum.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0172.wav|pertamina membeli valas di logtrans dumas valindo dan centra arus valindo.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0197.wav|ketua lajnah tandfidziyah barna sumantri, mengatakan kedatangan mereka untuk menemui wapres.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0243.wav|seorang ahli kesehatan masyarakat, ray fitzpatrick, setuju belaka dengan tafsiran atas hasil studi itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0044.wav|keputusannya nanti tentu tidak bisa dilepaskan dengan sounding sesama fraksi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0073.wav|tentu kalau umar al faroq tidak mungkin lah karena terlalu jauh katanya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0343.wav|selama tiga puluh tahun kita sudah mengalami dan membiarkan de sukarnoisasi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0205.wav|hal ini dikatakan dikdasmen indra jati sidi dalam konferensi pers di gedung depdiknas.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0315.wav|kalau itu fatwa, harus diproses melalui komisi fatwa.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0126.wav|namun, anggota tim penyidik sampai geleng geleng kepala mendengar pengakuan imam cs.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0336.wav|kapal yang ditemukan adalah satu jet foil buatan jerman yang berwarna biru.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0099.wav|reaksi yang sama, juga terjadi ketika polri berhasil menangkap tazul arifin pelaku pembacokan matori abdul jalil.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0104.wav|mpr tidak harus dituntut memberikan laporan kemajuannya, sebab belum ada yang perlu dipertanggungjawabkan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0031.wav|manusia diingatkan untuk membawa terang hidupnya kepada sesama di jalan yang dilalui.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0006.wav|jangan lupa sarapan ya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0235.wav|maqdir ismail mengatakan bahwa kliennya diizinkan berobat ke jepang.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0053.wav|dosen universitas cendrawasih, sedang melakukan perbandingan di india mengenai dihapuskannya pajak buku.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0033.wav|manchester berada di puncak klasemen sepak bola liga inggris berkat gol tunggal ruud van nistelrooy ke gawang aston villa.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0113.wav|negara togo, berada di perbatasan nigeria zimbabwe.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0275.wav|jenis yang banyak dibudidayakan salah satunya adalah karang sarang burung  seriatopora hystrixs dan karang melati.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0152.wav|menurut riefqi, setelah kesepakatan damai malino dua pemerintah harus melangkah lebih lanjut.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0242.wav|jendral efrain vazquez velasco, panglima angkatan bersenjata venezuela sedang berpidato di televisi nasional.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0078.wav|lanskap kota dalam liriknya mengingatkan orang pada kawasan pecinan di jakarta.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0116.wav|tiap unit menggunakan mesin, berkekuatan sebanding atau lebih kuat dari rangkaian yang ditarik lokomotif cc dua kosong tiga.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0176.wav|aparat keamanan menemukan barang bukti berupa satu senjata laras panjang jenis migzen.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0173.wav|lalu mereka memberi nama bayi pertama mereka agva.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0208.wav|konflik terjadi antara petani sido makmur dan petani maju kurang tanah dengan pt estu subur.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0098.wav|perampokan bca hampir bersamaan dengan peledakan di plaza hayam wuruk.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0297.wav|dua kekalahan diderita mu dari newcastle united dan bolton wanderers.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0214.wav|ia sempat menelpon orang tuanya sesaat setelah pesawat jatuh.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0287.wav|di bulan ramadhan, puasanya adalah ibadah wajib dan ibadah malam harinya adalah tathawwu sunnah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0097.wav|pedagang kaki lima yang omzetnya jutaan rupiah tidak diperhatikan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0321.wav|di islamabad, khotbah jumat mengingatkan presiden pervez musharraf untuk tidak bekerja sama dengan as.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0196.wav|ia juga pernah menjadi utusan khusus pemerintah as dalam kasus balkan franjo tudjman dari kroasia.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0259.wav|imam yang tidak sempat duduk ke bangku pengemudi taksi berpelat nomor b 1355 zx itu, diserbu dan dikeroyok massa.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0156.wav|supaya ini tidak jadi komoditas politik. kata yuniwati sofwan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0311.wav|tahun lalu di final dia mengalahkan petenis rusia, yevgeny kafelnikov.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0083.wav|ia menargetkan pada triwulan pertama tahun ini peraturan tersebut bisa disahkan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0163.wav|hari ini bppn juga memanggil obligor lainnya, yaitu pemegang saham bank aken i gede dermawan dan i made sudiarta, serta bank mashil utama philip sandra wijaya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0143.wav|dua orang yang tewas ini, tersambar petir saat berteduh di bawah pohon beringin di jalan raya pajajaran di depan rumah makan kfc.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0228.wav|salah satu lokasi penampungan mereka adalah masjid at taqwa di kelurahan bukit duri.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0155.wav|sepuluh menit kemudian, giliran tendangan halfvolley membentur tanah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0298.wav|alfa menjadi sebuah kenangan dari potret tinju indonesia yang lebih mementingkan aspek showbiz  penyelenggara.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0267.wav|ivan royfani, mengatakan selama empat jam ugm harus bebas dari asap kendaraan bermotor.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0299.wav|raja dangdut rhoma irama dan ratu dangdut elvy sukaesih tampil bersama.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0012.wav|makasih atas bantuannya sebulan lalu.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0206.wav|kapuspenkum kejakgung muljohardjo, mengatakan hal ini terjadi karena mereka belum menerima salinan surat keputusan presiden.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0300.wav|soeharto dirawat di salah satu ruangan vvip yang berada di lantai vi rspp.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0011.wav|jangan sampai pulang terlambat.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0191.wav|rombongan peserta yang menyusul hadir dari jawa timur, antara lain dikoordinir mujfaba ismail.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0062.wav|tiga puluh enam penumpang kereta api mutiara timur, jurusan surabaya banyuwangi, luka-luka akibat tiga gerbong anjlok di kawasan kecamatan rejoso.

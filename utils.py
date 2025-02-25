@@ -45,7 +45,7 @@ def load_checkpoint(checkpoint_path, model, optimizer=None):
 
 
 def save_checkpoint(model, optimizer, learning_rate, iteration, checkpoint_path):
-  logger.info("Saving model and optimizer state at iteration {} to {}".format(
+  logger.info("Saving model and optimizer state at iteration {} to {} 📥".format(
     iteration, checkpoint_path))
   if hasattr(model, 'module'):
     state_dict = model.module.state_dict()
@@ -68,38 +68,38 @@ def summarize(writer, global_step, scalars={}, histograms={}, images={}, audios=
     writer.add_audio(k, v, global_step, audio_sampling_rate)
 
 
-def latest_checkpoint_path(dir_path, regex="G_*.pth"):
-  f_list = glob.glob(os.path.join(dir_path, regex))
-  f_list.sort(key=lambda f: int("".join(filter(str.isdigit, f))))
-  x = f_list[-1]
-  print(x)
-  return x
-
-
-# def scan_checkpoint(dir_path, regex):
-#     f_list = glob.glob(os.path.join(dir_path, regex))
-#     f_list.sort(key=lambda f: int("".join(filter(str.isdigit, f))))
-#     if len(f_list) == 0:
-#         return None
-#     return f_list
-
-
 # def latest_checkpoint_path(dir_path, regex="G_*.pth"):
-#     f_list = scan_checkpoint(dir_path, regex)
-#     if not f_list:
-#         return None
-#     x = f_list[-1]
-#     print(x)
-#     return x
+#   f_list = glob.glob(os.path.join(dir_path, regex))
+#   f_list.sort(key=lambda f: int("".join(filter(str.isdigit, f))))
+#   x = f_list[-1]
+#   print(x)
+#   return x
 
 
-# def remove_old_checkpoints(cp_dir, prefixes=['G_*.pth', 'D_*.pth', 'DUR_*.pth']):
-#     for prefix in prefixes:
-#         sorted_ckpts = scan_checkpoint(cp_dir, prefix)
-#         if sorted_ckpts and len(sorted_ckpts) > 3:
-#             for ckpt_path in sorted_ckpts[:-3]:
-#                 os.remove(ckpt_path)
-#                 print("removed {}".format(ckpt_path))
+def scan_checkpoint(dir_path, regex):
+    f_list = glob.glob(os.path.join(dir_path, regex))
+    f_list.sort(key=lambda f: int("".join(filter(str.isdigit, f))))
+    if len(f_list) == 0:
+        return None
+    return f_list
+
+
+def latest_checkpoint_path(dir_path, regex="G_*.pth"):
+    f_list = scan_checkpoint(dir_path, regex)
+    if not f_list:
+        return None
+    x = f_list[-1]
+    print(x)
+    return x
+
+
+def remove_old_checkpoints(cp_dir, boundary_sorted_ckpts, prefixes=['D_*.pth']):
+    for prefix in prefixes:
+        sorted_ckpts = scan_checkpoint(cp_dir, prefix)
+        if sorted_ckpts and len(sorted_ckpts) > boundary_sorted_ckpts:
+            for ckpt_path in sorted_ckpts[:-boundary_sorted_ckpts]:
+                os.remove(ckpt_path)
+                print("removed {}".format(ckpt_path))
 
 def plot_spectrogram_to_numpy(spectrogram):
   global MATPLOTLIB_FLAG

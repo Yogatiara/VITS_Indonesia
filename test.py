@@ -91,76 +91,44 @@ from scipy.signal import medfilt
 # import librosa
 # y, sr = librosa.load("dataset/ITKTTS-IDN/utterance/ITKTTS001-0180.wav", sr=None)
 # print(f"Sample rate: {sr}, Duration: {len(y)/sr:.2f} sec")
-
-import librosa
 import glob
-import matplotlib.pyplot as plt
-import numpy as np
-from tqdm import tqdm
+import os
 
-# Load semua file audio dalam folder dataset
-audio_files = glob.glob("dataset/ITKTTS-IDN/utterance/*.wav")  # Ganti dengan path datasetmu
-hop_length = 256
-sr = 22050
+# # Path ke folder dataset
+dataset_path = "dataset/ITKTTS-IDN/utterance"  # Ganti dengan path yang benar
 
-file_names = []
-num_frames_list = []
-zero_frame_files = []  # List file dengan 0 frame
+# Cari semua file .pt dalam folder dataset
+pt_files = glob.glob(os.path.join(dataset_path, "*.pt"))
 
-print(f"🔍 Memproses {len(audio_files)} file audio...\n")
+# Hapus semua file .pt
+for file in pt_files:
+    os.remove(file)
+    print(f"Deleted: {file}")
 
-# Loop untuk menghitung frame setiap file dengan progress bar
-for file in tqdm(audio_files, desc="⏳ Menghitung jumlah frame", unit="file"):
-    try:
-        y, _ = librosa.load(file, sr=sr)
-        num_frames = len(y) // hop_length  # Hitung jumlah frame
-        file_name = file.split("/")[-1]
 
-        if num_frames == 0:
-            print(f"⚠️ WARNING: {file_name} memiliki 0 frame! Periksa file ini.")
-            zero_frame_files.append(file_name)
-            continue  # Skip file yang bermasalah
+# import torch
 
-        file_names.append(file_name)  # Simpan nama file
-        num_frames_list.append(num_frames)  # Simpan jumlah frame
+# def load_and_fix_spectrogram(spec_filename):
+#     spec = torch.load(spec_filename)
 
-        print(f"✅ {file_name}: {num_frames} frame")
+#     print("Original shape:", spec.shape)
 
-    except Exception as e:
-        print(f"❌ ERROR: Gagal memproses {file}. Kesalahan: {e}")
+#     # Jika tensor memiliki batch dimension (1, freq, time), squeeze
+#     if len(spec.shape) == 3 and spec.shape[0] == 1:
+#         spec = spec.squeeze(0)
+#     elif len(spec.shape) != 2:
+#         raise ValueError(f"Unexpected shape {spec.shape}, expected (freq, time)")
 
-# Cek apakah ada file yang valid sebelum membuat grafik
-if num_frames_list:
-    # Gunakan indeks angka sebagai label X
-    x_indices = np.arange(len(file_names))
+#     print("Final shape:", spec.shape)
+#     return spec
 
-    plt.figure(figsize=(12, 6))
-    plt.bar(x_indices, num_frames_list, color="skyblue")
+# # Contoh pemanggilan
+# spec = load_and_fix_spectrogram("DUMMY1/LJ001-0002.spec.pt")
 
-    # Label & judul
-    plt.xlabel("File Index", fontsize=12)
-    plt.ylabel("Jumlah Frame", fontsize=12)
-    plt.title("Distribusi Jumlah Frame per File Audio", fontsize=14)
-    plt.grid(axis="y", linestyle="--", alpha=0.7)
-
-    # Tambahkan garis batas min & max frame
-    plt.axhline(y=min(num_frames_list), color="red", linestyle="--", label=f"Min Frame: {min(num_frames_list)}")
-    plt.axhline(y=max(num_frames_list), color="green", linestyle="--", label=f"Max Frame: {max(num_frames_list)}")
-
-    plt.legend()
-
-    # Simpan sebagai file PNG
-    output_file = "frame_distribution.png"
-    plt.savefig(output_file, dpi=300, bbox_inches="tight")
-    plt.close()
-
-    print(f"\n📊 Grafik berhasil disimpan sebagai '{output_file}' ✅")
-
-# Laporkan file yang memiliki 0 frame di akhir proses
-if zero_frame_files:
-    print("\n⚠️ Daftar file dengan 0 frame:")
-    for f in zero_frame_files:
-        print(f"   - {f}")
-    print("\n🛠️ Periksa file di atas karena mungkin rusak atau kosong.")
-else:
-    print("\n✅ Tidak ada file dengan 0 frame. Semua file valid! 🎉")
+# plt.figure(figsize=(10, 5))
+# plt.imshow(spec.numpy(), aspect='auto', origin='lower', cmap='magma')
+# plt.colorbar(label="Magnitude")
+# plt.title("Spectrogram")
+# plt.xlabel("Time Frames")
+# plt.ylabel("Frequency Bins")
+# plt.show()

@@ -62,54 +62,46 @@ class TextAudioLoader(torch.utils.data.Dataset):
         spec, wav = self.get_audio(audiopath)
         return (text, spec, wav)
 
-    # def get_audio(self, filename):
-    #     audio, sampling_rate = load_wav_to_torch(filename)
-    #     if sampling_rate != self.sampling_rate:
-    #         raise ValueError("{} {} SR doesn't match target {} SR".format(
-    #             sampling_rate, self.sampling_rate))
-    #     audio_norm = audio / self.max_wav_value
-    #     audio_norm = audio_norm.unsqueeze(0)
-    #     spec_filename = filename.replace(".wav", ".spec.pt")
-    #     if os.path.exists(spec_filename):
-    #         spec = torch.load(spec_filename)
-    #         # spec = torch.load(spec_filename, weights_only=True)
-    #     else:
-    #         spec = spectrogram_torch(audio_norm, self.filter_length,
-    #             self.sampling_rate, self.hop_length, self.win_length,
-    #             center=False)
-    #         spec = torch.squeeze(spec, 0)
-    #         torch.save(spec, spec_filename)
-    #     return spec, audio_norm
-
+   
     def get_audio(self, filename):
-        try:
-            audio, sampling_rate = load_wav_to_torch(filename)
-            
-            if sampling_rate != self.sampling_rate:
-                raise ValueError(f"File {filename}: {sampling_rate} Hz doesn't match target {self.sampling_rate} Hz")
-            
-            audio_norm = audio / self.max_wav_value
-            audio_norm = audio_norm.unsqueeze(0)
-            
-            spec_filename = filename.replace(".wav", ".spec.pt")
-          
-            if os.path.exists(spec_filename):
-             
-                spec = torch.load(spec_filename)
-            else:
-                print(f"Generate spectrograms for {filename}...")
-                spec = spectrogram_torch(audio_norm, self.filter_length,
-                                        self.sampling_rate, self.hop_length, self.win_length,
-                                        center=False)
-                spec = torch.squeeze(spec, 0)
-                torch.save(spec, spec_filename)
-                print(f"Successfully saved {spec_filename}")
-            
-            return spec, audio_norm
+        audio, sampling_rate = load_wav_to_torch(filename)
+        if sampling_rate != self.sampling_rate:
+            raise ValueError("{} {} SR doesn't match target {} SR".format(
+                filename, sampling_rate, self.sampling_rate))
         
+        audio_norm = audio / self.max_wav_value
+        audio_norm = audio_norm.unsqueeze(0)
+        spec_filename = filename.replace(".wav", ".spec.pt")
+
+        if os.path.exists(spec_filename):
+            try:
+                spec = torch.load(spec_filename)
+                return spec, audio_norm
+            except Exception as e:
+                print(f"Error loading {spec_filename}: {e}. Recomputing...")
+
+        # Compute spectrogram
+        spec = spectrogram_torch(audio_norm, self.filter_length,
+                                self.sampling_rate, self.hop_length,
+                                self.win_length, center=False)
+        spec = torch.squeeze(spec, 0)
+
+        # Save spectrogram
+        try:
+            torch.save(spec, spec_filename)
+            print(f"Successfully saved {spec_filename} ✅")
         except Exception as e:
-            print(f"Error in file {filename}: {e}")
-            return None, None
+            raise RuntimeError(f"Failed to save {spec_filename}: {e}")
+
+        # Ensure file is fully written before returning
+        timeout = 5  # seconds
+        start_time = time.time()
+        while not os.path.exists(spec_filename):
+            if time.time() - start_time > timeout:
+                raise RuntimeError(f"File {spec_filename} not created after {timeout} seconds.")
+            time.sleep(0.1)  # Wait briefly before checking again
+        
+        return spec, audio_norm
 
     def get_text(self, text):
         if self.cleaned_text:

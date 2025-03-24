@@ -47,6 +47,7 @@ def main():
   os.environ['MASTER_PORT'] = '80000'
 
   hps = utils.get_hparams()
+
   mp.spawn(run, nprocs=n_gpus, args=(n_gpus, hps,))
 
 
@@ -59,20 +60,21 @@ def run(rank, n_gpus, hps):
     writer = SummaryWriter(log_dir=hps.model_dir)
     writer_eval = SummaryWriter(log_dir=os.path.join(hps.model_dir, "eval"))
 
-  dist.init_process_group(backend='nccl', init_method='env://', world_size=n_gpus, rank=rank)
+  if n_gpus > 1:
+    dist.init_process_group(backend='nccl', init_method='env://', world_size=n_gpus, rank=rank)
   torch.manual_seed(hps.train.seed)
   torch.cuda.set_device(rank)
 
   train_dataset = TextAudioLoader(hps.data.training_files, hps.data)
-  train_sampler = DistributedBucketSampler(
-      train_dataset,
-      hps.train.batch_size,
-      hps.data.audio_boundaries,
-      num_replicas=n_gpus,
-      rank=rank,
-      shuffle=True)
+  if n_gpus > 1:
+    train_sampler = DistributedBucketSampler(
+        train_dataset, hps.train.batch_size, hps.data.audio_boundaries, 
+        num_replicas=n_gpus, rank=rank, shuffle=True
+    )
+  else:
+      train_sampler = None
   collate_fn = TextAudioCollate()
-  train_loader = DataLoader(train_dataset, num_workers=8, shuffle=False, pin_memory=True,
+  train_loader = DataLoader(train_dataset, num_workers=8, shuffle=(train_sampler is None), pin_memory=True,
       collate_fn=collate_fn, batch_sampler=train_sampler)
   if rank == 0:
     eval_dataset = TextAudioLoader(hps.data.validation_files, hps.data)
@@ -96,8 +98,10 @@ def run(rank, n_gpus, hps):
       hps.train.learning_rate, 
       betas=hps.train.betas, 
       eps=hps.train.eps)
-  net_g = DDP(net_g, device_ids=[rank])
-  net_d = DDP(net_d, device_ids=[rank])
+  
+  if n_gpus > 1:
+    net_g = DDP(net_g, device_ids=[rank])
+    net_d = DDP(net_d, device_ids=[rank])
 
   try:
     _, _, _, epoch_str = utils.load_checkpoint(utils.latest_checkpoint_path(hps.model_dir, "G_*.pth"), net_g, optim_g)
@@ -114,14 +118,14 @@ def run(rank, n_gpus, hps):
 
   for epoch in range(epoch_str, hps.train.epochs + 1):
     if rank==0:
-      train_and_evaluate(rank, epoch, hps, [net_g, net_d], [optim_g, optim_d], [scheduler_g, scheduler_d], scaler, [train_loader, eval_loader], logger, [writer, writer_eval])
+      train_and_evaluate(n_gpus, rank, epoch, hps, [net_g, net_d], [optim_g, optim_d], [scheduler_g, scheduler_d], scaler, [train_loader, eval_loader], logger, [writer, writer_eval])
     else:
-      train_and_evaluate(rank, epoch, hps, [net_g, net_d], [optim_g, optim_d], [scheduler_g, scheduler_d], scaler, [train_loader, None], None, None)
+      train_and_evaluate(n_gpus, rank, epoch, hps, [net_g, net_d], [optim_g, optim_d], [scheduler_g, scheduler_d], scaler, [train_loader, None], None, None)
     scheduler_g.step()
     scheduler_d.step()
 
 
-def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loaders, logger, writers):   
+def train_and_evaluate(n_gpus, rank, epoch, hps, nets, optims, schedulers, scaler, loaders, logger, writers):   
   net_g, net_d = nets
   optim_g, optim_d = optims
   scheduler_g, scheduler_d = schedulers
@@ -129,7 +133,10 @@ def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loade
   if writers is not None:
     writer, writer_eval = writers
 
-  train_loader.batch_sampler.set_epoch(epoch)
+  if n_gpus > 1:
+    train_loader.batch_sampler.set_epoch(epoch)
+  elif n_gpus <= 1:
+    train_loader.batch_sampler
   global global_step
 
   net_g.train()
@@ -234,7 +241,7 @@ def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loade
           scalars=scalar_dict)
 
       if global_step % hps.train.eval_interval == 0:
-        evaluate(hps, net_g, eval_loader, writer_eval)
+        evaluate(n_gpus, hps, net_g, eval_loader, writer_eval)
         utils.save_checkpoint(net_g, optim_g, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "G_{}.pth".format(global_step)))
         utils.save_checkpoint(net_d, optim_d, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "D_{}.pth".format(global_step)))
         utils.remove_old_checkpoints(hps.model_dir,hps.train.boundary_sorted_ckpts, prefixes=["D_*.pth"])
@@ -244,7 +251,7 @@ def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loade
     logger.info('====> Epoch: {} '.format(epoch))
 
  
-def evaluate(hps, generator, eval_loader, writer_eval):
+def evaluate(n_gpus, hps, generator, eval_loader, writer_eval):
     generator.eval()
     with torch.no_grad():
       for batch_idx, (x, x_lengths, spec, spec_lengths, y, y_lengths) in enumerate(eval_loader):
@@ -260,7 +267,10 @@ def evaluate(hps, generator, eval_loader, writer_eval):
         y = y[:1]
         y_lengths = y_lengths[:1]
         break
-      y_hat, attn, mask, *_ = generator.module.infer(x, x_lengths, max_len=1000)
+      if n_gpus > 1:
+        y_hat, attn, mask, *_ = generator.module.infer(x, x_lengths, max_len=1000)
+      else:
+        y_hat, attn, mask, *_ = generator.infer(x, x_lengths, max_len=1000)
       y_hat_lengths = mask.sum([1,2]).long() * hps.data.hop_length
 
       mel = spec_to_mel_torch(

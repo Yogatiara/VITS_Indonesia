@@ -3,6 +3,7 @@ pre-trained
 DUMMY1
 DUMMY2
 DUMMY3
+*test*.py
 logs
 __pycache__
 .ipynb_checkpoints

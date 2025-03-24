@@ -1,0 +1,674 @@
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0746.wav|Saya ingin memilki tiago di barca.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0471.wav|Kebahagiaan sang pemain di hari ulang tahunnya semakin terasa.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0440.wav|Pastikan anak anda sudah memilih tempat tujuan sekolah!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0728.wav|Di laga nanti, barcelona dapat mengandalkan ketajaman lionel messi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0314.wav|sementara itu unggulan utama, arantxa sanchez-vicario menang 3 set berturut-turut.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0378.wav|Sulitnya itu tebal sekali spj nya itu!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0431.wav|Saya enggak tahu kalau naik!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0326.wav|dokter musni suadmodjo, memaklumi akan terjadinya insiden tersebut.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0795.wav|Lagi bujukin mama sih!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0467.wav|Ulanya ia berkendara di tengah kota pada malam hari.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0366.wav|Misalnya waktu saya jadi menteri perhubungan!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0330.wav|kh idris marzuki, menyosialisasikan kepada abdurrahman wahid tentang hasil muktamar nu.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0676.wav|Saya senang sekali!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0404.wav|Kalau keluar rumah bertemu kita senyum.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0206.wav|kapuspenkum kejakgung muljohardjo, mengatakan hal ini terjadi karena mereka belum menerima salinan surat keputusan presiden.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0603.wav|Arseille yang ingin mengejar ketertinggalan malah tertimpa sial.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0552.wav|Aktris pevita pearce, menunjukkan keseksian tubuhnya di bagian dada.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0707.wav|Gunung merapi keluarkan asap bnpb.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0388.wav|Kami harapkan penjajakan lebih matang dalam tiga hari atau lima hari.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0810.wav|Kemudian kritik serupa bertubi tubi dilancarkan tiga serangkai.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0039.wav|ary suta mengatakan hal ini akan segera dilaporkan ke menteri keuangan boediono.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0420.wav|Waktu itu, bener cepet banget berlalu!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0501.wav|Janggut ini, ini lelucon saya dengan quaresma!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0245.wav|jemaah dilepas oleh bupati aceh timur, azman usmanuddin.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0592.wav|Setelah dua hari, pepi mengantar korban pulang ke rumah.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0377.wav|Pluchaefume adalah parfum alami yang berasal dari daun beluntas.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0642.wav|Mery tidak asal bicara!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0149.wav|seperti yang dikatakan ahli hematologi, dan kaufman yang menjadi ketua tim peneliti.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0805.wav|Os blankos nyaris menambah keunggulan mereka di menit ke 10.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0658.wav|Foto biro setpres.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0261.wav|angie juga empat kali membuat double fault, sementara wynne tiga kali.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0640.wav|Itu karena kami memiliki proyek masa depannya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0568.wav|Kemarin saya akan melintasi jalan ini ditutup
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0275.wav|jenis yang banyak dibudidayakan salah satunya adalah karang sarang burung  seriatopora hystrixs dan karang melati.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0268.wav|penyebab kemungkinan lainnya adalah hydraulic failure.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0252.wav|di muzdalifah, kami bermalam serta mengambil batu untuk keperluan melempar jumrah.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0593.wav|Ngomongin cinta itu enggak melulu sama manusia!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0180.wav|kenapa?, menkehham yusril ihza mahendra saat berbicara di koran mengatakan bahwa dirinya adalah calon dari fraksi di dpr.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0177.wav|zaenuddin mengatakan, saat ini jafar umar didampingi empat orang penguasa hukum yaitu eggi sujana, yusa yusuf syahbana, arif, dan zaenudin taru.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0442.wav|Kami lelah dengan sikap yang ditunjukkan barcelona!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0836.wav|Saya yakin jatim punya masa depan yang baik.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0761.wav|Dulu saya menang bupati tahun 2012 tapi narkoba dihantam.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0303.wav|majalah basis berawal rapat yang juga dihadiri oleh g vriens dan p zoetmulder di ignatius college yogyakarta.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0173.wav|lalu mereka memberi nama bayi pertama mereka agva.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0144.wav|al mujahir, berkelana di afganistan dan pakistan pada tahun dua ribu satu.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0042.wav|pak hamzah baru berangkat pukul lima tepat katanya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0199.wav|acara itu menurut hasjrul, dimaksudkan untuk mempresentasikan proyek pemetaan udara.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0302.wav|gol penghibur tim tamu disumbangkan marek jankulovski dua menit menjelang pertandingan usai.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0789.wav|Saya siap konfrontasi dengan novanto dengan siapapun di manapun!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0413.wav|Kita sampai sini, apinya sudah besar!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0694.wav|Cincinnya sangat elegan dan besar.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0094.wav|polisi kemarin membebaskan sepasang turis wanita, bersama suaminya warga spanyol.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0739.wav|Juventus memainkan pertandingan ke 100 di liga italia.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0120.wav|untuk menciptakan gumpalan awan di angkasa, seperti nacl dan cao diperlukan waktu 10 hari.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0221.wav|wakapolri komjen pol chaeruddin ismail belum akan bertindak.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0692.wav|Saking cueknya, poppy bahkan pernah tidak mandi ketika syuting.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0458.wav|Terlalu sering membayar minimum payment.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0128.wav|pembakaran bus cv pelangi, dilakukan oleh sedikitnya delapan orang bersenjata.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0754.wav|Tidak pernah ada dendam.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0755.wav|Orang yang punya sirik dengki menjalankan agamanya pasti rusak.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0578.wav|Sukuk lagi persiapan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0570.wav|Saya setengah saudaranya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0491.wav|Tiket masuk selama dua hari dijual seharga 50000 rupiah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0104.wav|mpr tidak harus dituntut memberikan laporan kemajuannya, sebab belum ada yang perlu dipertanggungjawabkan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0720.wav|Kata faik fahmi.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0677.wav|Naik krl tapi topinya gucci.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0283.wav|dari indonesia tampil ab three dan kompyang raka.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0756.wav|Awalnya saya dihubungi mnc picers untuk film krisyeh.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0646.wav|Sampai hari ini sudah.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0814.wav|Saya ingin melihat rakyat makmur sejahtera.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0122.wav|xanana memutuskan keluar dari fretilin untuk membentuk dewan pertahanan nasional rakyat maubere atau cnrm.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0127.wav|kerinduan keluarga kepada imam samudra terlihat, ketika gambar putra nomor delapan itu muncul di acara liputan 6 sctv.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0563.wav|Bagi bapak siapa sosok panutan atau yang menginspirasi?
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0829.wav|Kebakaran di tamansari foto antara 7 gedung.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0055.wav|sidang sempat diawali pembacaan surat oleh tim penasihat hukum juan felix tampubolon.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0791.wav|Aku enggak ada tipe cowo khusus sih harus gimana gimana.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0842.wav|Tapi saya tidak mengatakan ganti khilafah.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0389.wav|Unit rumah sederhana.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0687.wav|Rumah adat maasai ini terletak di tanzania.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0343.wav|selama tiga puluh tahun kita sudah mengalami dan membiarkan de sukarnoisasi!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0333.wav|kkb berfungsi melakukan investigasi penuh atas setiap pelanggaran keamanan di aceh.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0322.wav|hanya dalam waktu kurang dari lima menit, tamara bleszinsky muncul kembali di panggung dengan busana berbeda.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0617.wav|Unit roda dua.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0293.wav|uss kitty hawk, yang membawa tujuh puluh pesawat tempur as dikabarkan kini berada di sekitar filipina.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0582.wav|Tidak tahu, ini mau lewat mana.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0078.wav|lanskap kota dalam liriknya mengingatkan orang pada kawasan pecinan di jakarta.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0705.wav|Foto itu diunggah joe di akun instagramnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0843.wav|Biro itu kini kami awasi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0216.wav|felx kepada tempo, mengatakan hingga senin siang asap tebal mendatar masih menyelimuti puncak gunung lokon.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0109.wav|bom rakitan, ditemukan menyangkut di roda belakang kanan mobil timor b, satu lima bq yang dikemudikan fx mario adiora.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0724.wav|Bisa dibilang semua pengalaman baru buat saya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0419.wav|Assist di liga.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0198.wav|atal behari vajpaye, menyaksikan penandatanganan lima kerjasama bilateral antara kedua negara.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0485.wav|Sayang!. nikita mirzani tidak menyebutkan siapa yang dia sindir.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0076.wav|halimah menyempatkan untuk mencari box itu dan menghirupnya dalam dalam!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0015.wav|dimana tempat rapatnya?
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0693.wav|Ucas moura foto afp.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0358.wav|Tidak!. saya tidak kecewa terkait gagal rekrut jorginho.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0466.wav|Nah, itu saya kan belum baca!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0207.wav|kemudian pemerintah membuat program khusus untuk menyelamatkan bisnisnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0786.wav|keluargaku juga baik baik aja.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0575.wav|Ya!. dia wijnaldum berkata dia ingin saya di liverpool.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0161.wav|kapal tugbot gerung milik pertamina ke pelabuhan gilimanuk.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0481.wav|Baca juga!. anak elvy sukaesih ditangkap di kediamannya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0376.wav|Liverpool membutuhkan penjaga gawang baru.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0529.wav|Saya rasa dia mengatakan hal yang bodoh!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0606.wav|Gerakannya biasa saja, enggak ada yang luar biasa.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0352.wav|Membersihkan tempat pembuangan sampah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0201.wav|ajwar menentang ide konfrontatif tanpa menyebutkan alasannya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0441.wav|Aku bukan orang yang mau matokin nikah umur berapa!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0820.wav|Brenden itu dia masih terus lerning bai duing ya!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0220.wav|audi berhasil menciduk baihaqi di sebuah ruko di jalan lhoknga simpang lima, desa lamgeueu kecamatan peukan bada aceh besar.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0585.wav|Saya bersama pak menteri dan pak gubernur sedang makan bakso.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0602.wav|Asap secara cuaca tidak begitu significant mengganggu penerbangan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0295.wav|wasit joey crawford berbalik pada saya dan mengatakan, anda dapat menembak itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0560.wav|Walaupun jakarta sepi, saya menikmati selalu.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0048.wav|angka tertinggi dicapai album abba gold lebih dari 20 juta keping.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0712.wav|Selama beberapa hari ini, ia mengaku punya pengalaman menarik.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0523.wav|Armada punya lagu baru nih!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0823.wav|Kami memiliki penggemar yang luar biasa, benar benar menakjubkan!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0450.wav|Ee mengungkapkan, ada kalanya ia merasa ingin berhenti menjadi selebriti.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0072.wav|bagaimana jika saya sakit dan harus dioperasi!.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0254.wav|tiga kelompok militan terkemuka di timur tengah adalah hizbullah, hamas, dan jihad.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0447.wav|Saya sudah tobat, kenapa sih kamu godain aku lagi?!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0136.wav|ini bukan lagi zaman dharma wanita!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0643.wav|Waktu setempat itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0486.wav|halo Mishela, gimana kabarnya di sana?
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0385.wav|Simak ceritanya di sini!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0636.wav|Densus gerebek terduga teroris di blitar foto antara?
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0831.wav|Ini akan saya lihat benar atau enggak programnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0815.wav|Diet sukses hukhes tentu saja tidak berlangsung begitu saja.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0696.wav|Kondisi kami sedang bagus sekarang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0725.wav|Satu motor dapat membawa 6 liter bensin.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0733.wav|Mereka pun akhirnya sampai di rumah sakit sekira pukul 8 malam.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0363.wav|Dan tidak pernah salat berjamaah!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0737.wav|Wib dini hari pagi sekitar pukul 5.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0736.wav|Saya berharap pemerintah berjuang habis habisan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0269.wav|boyce menyatakan, persetujuan tersebut merupakan tindak lanjut dari pertemuan paris club iii di paris minggu lalu.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0773.wav|Baca juga paramount garap filem dokumentasi paul walker!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0460.wav|Dan saya ngebayangkan ketika suami saya berbicara seperti itu ke saya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0034.wav|alex ferguson belum mau memisahkan duet penyerang ole gunnar solskjaer dan nistelrooy dari lapangan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0359.wav|Iya, ibu tadi nangis karena lega.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0547.wav|Ilustrasi jalan rusak foto okezone.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0130.wav|saat ini di utara atau di wilayah filipina terbentuk badai tropis atau itecezet.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0775.wav|Aduan kasus pelanggaran anak.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0504.wav|Real madrid begitu digdaya di musim ini.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0683.wav|Kami belum tahu pasti.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0719.wav|Tolong betul betul kita pahami, tadi kriminalisasi ulama misalnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0604.wav|Laki laki orang, perempuan orang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0699.wav|Aku bangga banget sama kalian semua!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0625.wav|Zaira adalah pilihan yang bagus.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0751.wav|Aku mungkin akan memiliki satu anak lagi!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0037.wav|bayi memerlukan otot kaki yang ekstra kuat untuk menjaga keseimbangan tubuh.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0365.wav|Thailand adalah negerinya para gajah.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0514.wav|Tidak ada masalah dengan musisi kover buat saya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0010.wav|alasannya belum mengerjakan pekerjaan rumah.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0349.wav|Baca juga pesona ronaldo di madrid bikin zidane kagum!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0166.wav|agniezka adalah nama salah satu teman saya di laboratorium.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0482.wav|Padahal beliau tidak melakukannya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0455.wav|Perbanyak tanaman hijau!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0418.wav|Foto nbc news.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0608.wav|Bagi saya pertandingan melawan persela sangat penting.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0395.wav|Foto eurosport.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0502.wav|Langkah kedua adalah mengurutkan dan mengidentifikasi mikroba.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0102.wav|personel akan ditempatkan di gedung manggala wana bhakti.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0264.wav|kesatuan komando maluku dipimpin seorang mayjen.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0054.wav|pemerintah indonesia, antara lain akan diwakili oleh menkeu boediono.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0402.wav|Foto johnpeyi instagram.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0527.wav|Pernikahan diselenggarakan di sebuah hotel di seoul.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0487.wav|terus gimana sekolah kamu di sana?
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0802.wav|Persaingan louvren lukaku di laga nanti bukanlah yang pertama.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0656.wav|Saya memutuskan untuk membuat sesuatu yang berbeda.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0664.wav|Bansos rastra ini, kata dia, sengaja digulirkan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0167.wav|untuk meyakinkan masyarakat global, bahwa pemerintahan negara mereka bekerja untuk masyarakatnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0289.wav|suwartoyo adalah anggota himpunan pandu dan pramuka wreda banyumas.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0040.wav|keempat korban sempat mendapat perawatan di sebuah klinik dan rumah sakit setempat.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0539.wav|Pengennya sih banyak!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0818.wav|Kemaren lolos seleksi 34 orang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0493.wav|Saya enggak tau persis yang tau rekaman cctv.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0438.wav|Peserta kebanyakan anak kecil!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0673.wav|Dari pertandingan higuain, mengemas gol.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0274.wav|toni braxton menjadi perempuan penyanyi r&b terbaik.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0246.wav|yang gagal adalah zlatko zahovic, amedeo carboni, dan pellegrino.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0332.wav|darul arqam dikategorikan sebagai organisasi terlarang di malaysia.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0233.wav|loebby loqman, dihubungi oleh kompas secara terpisah di jakarta.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0009.wav|dia tidak datang ke sekolah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0129.wav|menurut endriartono, dirinya tidak begitu memahami arah yang ingin dituju oleh penelitian yang dilakukan icw dan yappika.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0760.wav|Nanti malam kita mulai kik of nya kira kira jam 7 malam.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0380.wav|Raffi mengaku pertemuannya dengan enji sama sekali tidak disengaja.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0537.wav|Pengalihan arus nanti situasional.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0627.wav|Saya tidak tahu wacana itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0175.wav|ketiga warga asing yang diciduk itu, adalah hong peixing, hong shi phao dan zheng bigxu.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0566.wav|Melihat unggahan bekti, warganet bukannya mengomentari sosok masa lalunya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0587.wav|Jam istirahat.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0495.wav|Ada penurunan harga komoditas kecil kecil tapi kualitasnya tetap baik.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0142.wav|henny supolo sitepu, menyampaikan rasa duka yang mendalam terhadap perilaku anggota fbr.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0635.wav|Kami semua benar benar mencintai dia, griezmann.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0666.wav|Tidak berhenti disitu!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0483.wav|Pendaftaran beasiswa afirmasi ldpd akan dibuka sampai april.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0392.wav|Dia guardiola pasti berpengaruh bagi inggris.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0224.wav|cabang wushu taolu nanquan diikuti oleh jatim, dki, dan jateng.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0336.wav|kapal yang ditemukan adalah satu jet foil buatan jerman yang berwarna biru.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0051.wav|zohra menilai monsanto sudah melakukan serangkaian penipuan dengan berlindung di balik petani.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0462.wav|Orang tua saya setuju dengan keputusan saya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0633.wav|Wayne baik baik saja.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0660.wav|Kisah itu berawal dari seorang model bernama chloe ayling.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0060.wav|apalagi saya nonton dengan jenderal ryamizard, ryacudu hasyim muzadi, saifulloh imam daruqutni, adiyaksa dan sebagainya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0517.wav|Ada pertanyaan terbuka, edy rahmayadi mendapat dukungan 83 persen.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0610.wav|Kami masih ingin liat sisi legalnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0339.wav|hasilnya akan kita laporkan kepada joint komite di jenewa!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0096.wav|dari ruang besuk itu, terlihat imam sedang shalat zuhur di dalam sel penjara.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0203.wav|peraturan paksa badan gijzeling tidak bisa diterapkan untuk kasus pidana.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0119.wav|yusril menyayangkan sikap pemerintah kanada yang mengait ngaitkan dengan bantuan cgi dan investasi asing.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0045.wav|tiga warga indonesia ditangkap di bandara internasional ninoy aquino.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0456.wav|Saya tidak bisa bersaing dengan neymar.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0022.wav|presiden padang press sekarang adalah khoirul jasmi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0244.wav|padahal, seperti dikemukakan prof pervez dalam znet, tayangan itu membuat perih dan muak!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0249.wav|disusul akhmad heramudin, sumayya syahidah, hafizhah raehana, dan si bungsu muhammad asyraf.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0294.wav|kembali dia melantunkan vokalnya dalam lagu white bird,  dari album  subject to change.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0241.wav|di kyrgyzstan, tentara pasukan gerak cepat disiapkan rusia untuk menangkis serangan gerilya-gerilya yang didukung taliban.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0536.wav|Pihak kami membutuhkan sosok penyerang yang sangat agresif.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0500.wav|Sebenarnya tidak ada masalah dalam sebuah perbedaan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0227.wav|mullah mohammad khaqzar adalah salah seorang pendiri gerakan taliban yang telah membelot.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0548.wav|Saya mengecam aksi teroris ini.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0551.wav|Menurut sugiono, telur mungkin dipalsukan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0597.wav|Kepada fans fans terbaik kami, mohon terus nantikan kami!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0767.wav|Jujur saja dia jelek.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0663.wav|Kualitas telur dapat ditingkatkan dengan obat obatan alternatif.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0083.wav|ia menargetkan pada triwulan pertama tahun ini peraturan tersebut bisa disahkan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0411.wav|Saya melihat jasad jasad mobil mobil hangus terbakar.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0653.wav|Melalui akun instagram pribadinya, dewi mengunggah sebuah video.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0808.wav|Kalau itu saya kurang tahu pasti.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0492.wav|Kaos kolom kosong pilihanku di pilwalkot makassar foto prayudha okezone.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0589.wav|Nanti kita buktikan!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0097.wav|pedagang kaki lima yang omzetnya jutaan rupiah tidak diperhatikan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0714.wav|Adik beradiknya ada 9 orang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0555.wav|Tulis seorang warganet.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0370.wav|Selalu pertimbangkan dengan matang!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0611.wav|Belum belum konfirmasi kehadiran sidang mediasi, saya juga belum memastikannya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0390.wav|Sangat mungkin damai!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0035.wav|menurut umar juoro, sia sia memberikan waktu tiga bulan lagi kepada debitor.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0259.wav|imam yang tidak sempat duduk ke bangku pengemudi taksi berpelat nomor b 1355 zx itu, diserbu dan dikeroyok massa.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0032.wav|renovasi sejumlah terminal dan stasiun kereta api di jakarta dimulai jumat ini.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0508.wav|Saat ramai itu, saya langsung cek.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0101.wav|di rumah itu, sudah tersedia sebuah barak penampungan perempuan perempuan abg.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0577.wav|Kabarnya ada dua opsi yakni defleksi dan gangguan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0554.wav|Foto reuters matthew chaiWWlds.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0373.wav|Mau dibawa saja?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0139.wav|direktur advokasi pusat reformasi pemilu hadar gumay, mengemukakan keengganan mpr untuk menyerahkan kewenangan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0510.wav|Apa itu manusia harus sehat?
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0816.wav|Hormon progesteron dilepaskan di banyak selama kehamilan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0077.wav|ketika kuatrianus hendak menelepon di wartel di halaman parkir bandara, penjahat radin melarikan tas dengan mobil feroza.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0188.wav|republik ceko diwakili oleh pavel sricek tomas repka dan radek bejbel.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0309.wav|sarah sechan termasuk salah satu vj mtv yang populer di asia.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0622.wav|Pakai alas kaki!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0674.wav|Menurutnya, bulan maret masih merupakan puncak musim hujan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0553.wav|Bersama atletiko musim ini gimenez tampil prima.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0364.wav|Dia punya cita cita, kata zainab.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0580.wav|Kami selalu menghormati lawan kami.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0691.wav|Saudara sejatinya pilkada adalah pesta demokrasi, pesta rakyat.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0328.wav|interupsi yang riuh dan panas langsung bertaburan begitu pemimpin sidang kusdarto memulai sidang.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0075.wav|sistem radar baru yang kuat, sehingga bisa menembus tanah guna mengetahui adanya terowongan atau bunker bawah tanah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0307.wav|presiden rusia vladimir putin mengatakan, kehadiran pasukan as bukanlah tragedi bagi rusia.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0446.wav|Kalo saya ceo nya feeport, saya akan bertindak berbeda, tambahnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0137.wav|komisi konstitusi yang diusulkan banyak kalangan, dimaksudkan untuk menyusun draft konstitusi.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0409.wav|Suka pakai daster, make up seadanya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0279.wav|ada pula sebuah penyegar ruangan air freshener dan exhaust.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0609.wav|Dia cemburu dengan dua adiknya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0185.wav|ihsan mengatakan, unjuk rasa akan terus dilakukan hingga ada tindakan pemerintah yang tegas terhadap serangan amerika ke afganistan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0416.wav|Konsep itu tidak dibocorkan okan sebelumnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0641.wav|Kami memiliki banyak nama untuk menggantikan posisinya zhaka.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0586.wav|Cuaca sungguh sangat dingin di pyongyang pada desember!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0607.wav|Wib unjuk rasa di depan gd.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0092.wav|di satu sisi undang undang yang disahkan tersebut mengacu kepada hukum anglo saxon.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0752.wav|Maria memang selalu pulang malem setelah menjalankan kewajiban.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0841.wav|Iya tadi malam aku nyanyi!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0785.wav|Aktivitas belajar mengajar masih normal.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0156.wav|supaya ini tidak jadi komoditas politik. kata yuniwati sofwan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0595.wav|Real madrid berhemat di bursa transfer musim panas.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0747.wav|Kalau instrumennya hanya itu itu saja.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0172.wav|pertamina membeli valas di logtrans dumas valindo dan centra arus valindo.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0110.wav|absennya alexander mostovoi yang masih belum sembuh dari cedera, ternyata membuat lini tengah rusia kurang berbobot.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0833.wav|Saya juga heran tau tau nazar bicara fahri.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0652.wav|Lbiol merupakan mantan pemain madrid.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0735.wav|Sampai sampai romaria sempat menuturkan ingin membuat album keduanya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0132.wav|tetapi jika dipadu dengan praktik kebijakan dan penadbiran, serta manajemen perusahaan kelas dunia unsur unsur tersebut akan menjadi ampuh.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0052.wav|naskah ditandatangani ketua ha nazri adlani dan sekretaris umum din syamsuddin di masjid istiqlal.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0461.wav|Senang mereka, aku punya kegiatan!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0464.wav|Nas urbaningrum foto okezone.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0372.wav|Pastinya prihatin ya!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0468.wav|Kota palembang memiliki jadwal penerbangan langsung menuju jogjakarta.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0005.wav|nanti malam pulang jam berapa.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0628.wav|Dapat kabar jam 6 sore.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0154.wav|kuasa hukum ustadz jafar, senin siang mendaftarkan gugatan praperadilan terhadap polri ke pengadilan negeri jakarta selatan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0672.wav|Jangan dilihat seribunya!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0169.wav|kapolres aceh utara, melalui pabugpen abdi darmawan menuding ancaman itu dilakukan oleh gam.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0743.wav|Alhamdulilah saya diberi kesempatan langka bertemu raja.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0765.wav|Pertama anda harus memilih menu seting!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0591.wav|Politik anggaran sangat membutuhkan dukungan bupati.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0317.wav|dua personel satpam itu tidak sempat berbuat apa-apa karena disergap dan ditodong senjata api.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0417.wav|Ya, kita selalu berulang kali rapat kembali rapat kembali.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0296.wav|dua paket tiba pada hari selasa di kantor pos rawda di riyadh bagian timur!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0238.wav|fungsionaris dpp partai golkar rully chaerul azwar, menyayangkan tindakan presiden abdurrahman wahid.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0601.wav|Anda harus mengakui para pemain liverpool bermain sangat baik!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0596.wav|Sembilan gardu exit, enam gardu entrenc.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0721.wav|Beri si dia pijatan!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0024.wav|namun sumber di polres metro menjelaskan mereka adalah wahyu agus dan khairul.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0837.wav|Memutuskan untuk terbuka di hari bahagianya nanti.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0690.wav|Lantas, apa tanggapan vino g?
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0742.wav|Dia tidak bisa berbahasa inggris dengan baik.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0821.wav|Saya belajar banyak dari anda.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0541.wav|Saya sangat lelah dan anda tahu berapa gaji saya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0191.wav|rombongan peserta yang menyusul hadir dari jawa timur, antara lain dikoordinir mujfaba ismail.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0424.wav|Dia any, pasien rs grhasia pakem.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0621.wav|Saya tidak menariknya, sterling keluar karena alasan itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0242.wav|jendral efrain vazquez velasco, panglima angkatan bersenjata venezuela sedang berpidato di televisi nasional.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0021.wav|tayangan televisi yang kurang mendidik justru disukai masyarakat.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0148.wav|kami juga tidak ingin lagi melihat rakyat terus hidup dalam suasana konflik!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0116.wav|tiap unit menggunakan mesin, berkekuatan sebanding atau lebih kuat dari rangkaian yang ditarik lokomotif cc dua kosong tiga.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0002.wav|semoga ujiannya berjalan lancar!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0803.wav|Saya keluar rumah dari jam 1.25 siang.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0257.wav|thailand hanya mencatat sekali peluang emas lewat manit noyvach.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0371.wav|Meter internasional paling enggak ya!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0406.wav|Sebelum ini, dia pernah beraksi di atm rsmh palembang.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0250.wav|osama bin laden, kini bersembunyi di provinsi afganistan tengah, oruzgan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0176.wav|aparat keamanan menemukan barang bukti berupa satu senjata laras panjang jenis migzen.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0121.wav|jenazah emval tiba di rscm dari bogor minggu pukul sembilan tepat.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0422.wav|Sampai peluit panjang pertanda pertandingan berakhir, skor tidak berubah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0337.wav|hoirul anam, berpendapat bahwa negosiasi bisa melahirkan kesepakatan untuk berbagi teritori.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0559.wav|Bagi saya, penting untuk berbicara!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0196.wav|ia juga pernah menjadi utusan khusus pemerintah as dalam kasus balkan franjo tudjman dari kroasia.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0134.wav|robert redford menerima piala kehormatan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0064.wav|adnan buyung nasution meminta kepada hakim yang mengadili sidang tersebut menerima permohonan praperadilan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0338.wav|ada keajaiban dari langit!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0612.wav|Suara di kecamatan rambutan, kecamatan bajenis.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0444.wav|Musik kita jaga keberadaannya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0277.wav|foxnews adalah salah satu stasiun televisi di amerika.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0750.wav|Ger melon potong dadu kecil!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0701.wav|Tottenham kalahkan madrid di liga champions musim ini.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0723.wav|Gimana ya, saya nggak tahu pasti sih gimana nantinya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0793.wav|Duh serem banget sih pasti kalau ada bom.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0145.wav|kalau dikembalikan selama terjadinya gangguan ini, akan kami ganti seratus persen kata hasan lutfhi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0063.wav|pemerintah menggunakan beberapa referensi, diantaranya dampak ekonomi setelah serangan teroris di luxor mesir pada bulan november.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0211.wav|alekx manuputty mengaku tidak gentar menghadapi persidangan itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0230.wav|masjid al-aqsa terletak di palestina.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0426.wav|Gimana ya, susah pilih sih!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0452.wav|Kami belum mengetahui rincian tentang pengembangan pemain muda itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0473.wav|Bukunya itu, buku resep memasak makanan sehat dan bergizi.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0488.wav|Ya, banjir lagi ini!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0266.wav|menkop dan usaha kecil menengah zarkasih nur menggunakan toyota zygnus.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0647.wav|Aku baru saja menyelesaikan novel keempat galbraith lethal waith!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0056.wav|rektor universitas muhammadiyah malang muhadjir effendi, mengatakan pembentukan komisi konstitusi hanya akan mendegradasikan lembaga legislatif.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0506.wav|Ya, memang pertama main horor.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0427.wav|Pertama, saya yang mandi kemudian istri saya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0117.wav|bisa melayani masyarakat, sebagai telepon lokal tetap seperti yang dilakukan telkom dengan cdma dua ribunya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0291.wav|perusahaan newmont pacific nusantara menyerahkan bantuan kepada korban musibah banjir.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0113.wav|negara togo, berada di perbatasan nigeria zimbabwe.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0281.wav|maka dikenallah sosok sophie, dalam klip video yang sering ditayangkan mtv.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0308.wav|kepala polisi yugoslavia zoran zivkovic semula khawatir milosevic akan berbuat nekat.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0017.wav|persoalan bangsa ini bukan hanya permasalahan gus dur dan mega.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0095.wav|mereka adalah mulyo sugiarto dan kasaroh.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0588.wav|Tapi saya pikir masih terlalu dini untuk menyimpulkan itu!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0807.wav|Aku tidak tahu apakah akan ada detpul atau tidak!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0190.wav|rapat dipimpin farid wajdi ali dan dihadiri semua pimpinan fraksi dan pimpinan komisi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0200.wav|mungkin ini kebohongan yang lain kata nebojsa vidakovic.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0644.wav|Sejak hernandez pergi barcelona, tidak memiliki pemain seperti itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0401.wav|Ksi pelaku mengakibatkan seorang pastur dan tiga orang jemaatnya terluka.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0813.wav|Kemarin aku sudah melamarmu.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0229.wav|surat kabar al-iqtissadia, memberitakan penembakan salah seorang pejabat di saudi arabia.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0684.wav|Baca juga de gea tolak madrid demi manchester united.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0758.wav|Ini ada anak kecil juga kan?
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0804.wav|Kim jong nam diasingkan ke beijing.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0516.wav|Mader teresa untukku aku mendukung semua orang.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0287.wav|di bulan ramadhan, puasanya adalah ibadah wajib dan ibadah malam harinya adalah tathawwu sunnah.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0630.wav|Robs, tulis ibu dua anak itu lagi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0069.wav|contoh darah dari kedua orang tua iqbal sudah diperiksa dan dicocokkan dengan jaringan dari tubuh jenazah yang diduga iqbal.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0049.wav|kalian boleh lihat saya tidak apa apa padahal saya juga mengonsumsi produk transgenik!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0645.wav|Foto pertama diambil di sebuah tempat bernama amber fort peles.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0812.wav|Pingin totalitas saja.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0088.wav|secara verbal, masyarakat dididik untuk bersikap kesatria kata sultan hamengku buwono.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0722.wav|Si penipu gunakan bahasa medis untuk meyakinkan saya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0634.wav|Mereka berjuang sangat keras di liga.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0410.wav|Kita kerja tiga bulan itu untuk pertandingan nanti.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0068.wav|bahkan bukan mustahil dalam dua tahun mendatang nanggroe aceh darussalam sudah mencapai kemajuan berarti.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0654.wav|Jangan menggerakkan massa!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0834.wav|Kami butuh belajar kembali begitu banyak materi kita sendiri.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0730.wav|Mengenakan bra setiap hari.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0800.wav|Kami menjaga dan melindungi kerahasiaan pelapor.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0008.wav|maaf saya terlambat datang ke kantor.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0787.wav|Wib dengan mengenakan kemeja putih lengan panjang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0408.wav|Wib rabu juni kemarin.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0615.wav|Rencananya sih, sampai besok masih syuting terus!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0178.wav|menteri pertahanan mahfud md, menegaskan pemerintah menolak keinginan merdeka atau menggelar referendum.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0748.wav|Ada maret pukul 6.30.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0819.wav|Saya sangat bersyukur ada bantuan seperti ini!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0706.wav|Saya tidak sabar menunggu audiens melihat ini, kata cruise.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0405.wav|Statistik lengkap porto vs juventus klik di sini!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0616.wav|Di grup wa saja sih ngobrolnya!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0031.wav|manusia diingatkan untuk membawa terang hidupnya kepada sesama di jalan yang dilalui.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0423.wav|Saya dibius total, jadi saya tidak tahu prosesnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0583.wav|Kata departemen itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0351.wav|Kata dia, ayo mau banget!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0830.wav|Masa depan saya akan ditentukan sebelum piala dunia.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0057.wav|arif arryman adalah mantan staf ahli menko perekonomian pada era menko perekonomian rizal ramli.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0779.wav|Kami setiap bulan sampai 2 kali mengadakan pelatihan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0019.wav|alquran mengingatkan kita, bahwa pada diri nabi muhammad terdapat contoh yang sempurna.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0550.wav|Sama orang orang diteriaki, suruh berhenti!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0453.wav|Tidak perlu saya sampaikan ormas mana.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0093.wav|malam itu, yuni menyanyikan lagu kesukaan maya, yaitu cinta yang kumau versi indonesia dari lagu ni ye te ai.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0688.wav|Saya tidak memeriksa jurnal jurnalnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0702.wav|Saya harus tunjukkan potret buram.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0474.wav|Terus datang keruangan saya, andi menyatakan bahwa sudah terealisasi.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0565.wav|Orang yang diangkut dengan tujuh pesawat khusus.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0594.wav|Ibu kota teheran.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0067.wav|dia menyatakan keyakinannya bahwa program pembangunan akan dapat dipacu di provinsi itu manakala kondisi kedamaian terpelihara.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0512.wav|Sabrina bukan film pertama sara.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0228.wav|salah satu lokasi penampungan mereka adalah masjid at taqwa di kelurahan bukit duri.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0613.wav|Di belakang podium.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0256.wav|dalam film tersebut, david bermain sebagai aktris legendaris hollywood, judy garland.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0133.wav|melalui mediator henry dunant center, atau hdc pihak gam di swedia menyatakan siap menandatangani perjanjian damai dengan pemerintah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0081.wav|kenapa kapal itu langsung ditarik ke jakarta dan tidak dilimpahkan ke kotawaringin barat?
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0572.wav|Wib ketika piringan bulan memasuki penumbra bumi.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0763.wav|Ada fase pertama ini terdapat tiga lintas pelayanan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0006.wav|jangan lupa sarapan ya!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0355.wav|Mil mengatakan ada dua rumah yang dikontraknya di cipaganti.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0792.wav|Fernando alonso dias lahir di oviedo asturias spanyol.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0505.wav|Saya jalani aja kehidupan saya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0521.wav|Waktu itu, saya ikut penangkapan!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0174.wav|sementara exxon, mobil diwakili oleh harry logwell ron wilson serta tiga orang stafnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0558.wav|Lalu sekarang kami bermain tanpa coutinho.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0272.wav|exxonmobil raksasa minyak amerika menyerah di aceh.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0357.wav|Sendok teh garam.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0777.wav|Ferdi duduk di sit c.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0497.wav|Jumat maret dinihari.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0798.wav|Anda harus masuk dengan keyakinan anda dan keyakinan saya!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0050.wav|ujar goldstein, berpromosi kepada wartawan saat ditanya dampak negatif produk rekayasa genetika.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0098.wav|perampokan bca hampir bersamaan dengan peledakan di plaza hayam wuruk.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0569.wav|Berselang sekira satu jam kemudian, emil juga mengunggah kembali foto.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0090.wav|menlu cina, tang jiaxuan dan sempat pula menyinggung masalah irak.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0202.wav|terjadi kesalahan ketik kata mayjen menjadi majyen.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0670.wav|Timnas spanyol foto afp.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0164.wav|rencana ini sudah kami beritahukan jauh-jauh hari, kalau belum siap astagfirullah!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0321.wav|di islamabad, khotbah jumat mengingatkan presiden pervez musharraf untuk tidak bekerja sama dengan as.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0192.wav|rombongan berangkat menuju taman pahlawan rajghat, untuk meletakan karangan bunga di tempat kremasi mahatma gandhi.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0726.wav|Jumlah kombatan mereka.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0025.wav|mereka tertangkap saat melakukan transaksi di jalan raya galaxi jakasetia bekasi selatan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0429.wav|Wita melati dipaksa melayani empat pemuda kampung sekaligus.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0240.wav|habibie sangat menginginkan adanya komponis indonesia yang setaraf dengan bartok, lizt, chopin, bramhs, dan lain-lain.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0490.wav|Nama ricky harun melonjak sejak kemarin siang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0480.wav|Ya, mungkin seperti itu?!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0581.wav|Proses penyembuhan noah berlangsung setidaknya selama 3 bulan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0026.wav|menurut zainal, seluruh rangkaian kereta dari stasiun gambir ke arah timur sudah berangkat sesuai jadwal.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0637.wav|Tapi saya sangat optimis ketika main di stadion telada.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0312.wav|www dot pravda dot com dot ua adalah website koran online berbahasa rusia.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0218.wav|penangguhan penahanan tersangka, yang juga wapimcab bank lippo makassar itu merupakan penangguhan kedua.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0280.wav|kamus oxford digunakan oleh banyak orang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0545.wav|Jujur saja, aku tidak berpikir bahwa aku adalah tipenya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0840.wav|83 Menit unggul satu gol tampaknya membuat valensia memilih bermain aman.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0718.wav|Kecelakaan kereta ini terjadi akibat ulah seekor sapi.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0519.wav|Tugas anda adalah membantu untuk membayarkan tagihan mereka.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0564.wav|Anaknya cantik banget, kak alice.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0757.wav|Tapi hal ini tidak membuatku gentar!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0383.wav|Ada ikan mati!. burung mati dalam perutnya apa sampah plastik?!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0525.wav|Dia bilang, dia akan melakukan sesuatu!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0662.wav|Bahkan di setiap pertemuan ini juga selalu kami sampaikan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0731.wav|Kami masih tahap pengembangan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0700.wav|Jumlah pemilih potensial non ktp elektronik ada di angka 45 persen.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0375.wav|Padahal saya cuma keluar rumah sebentar!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0753.wav|Senang sekali akhirnya bisa mewujutkan sebuah konser!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0186.wav|peringkat kedua diduduki koperasi jembatan kesejahteraan dan ketiga ayam bakar wong solo.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0439.wav|Saya lebih pada kesiapan pribadi dulu.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0231.wav|metode iqra, terbukti membuat murid dapat membaca al-quran dengan waktu yang relatif lebih singkat.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0540.wav|Polisi mereka anggap thoghut.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0334.wav|jenderal rusdoihardjo, memberi himbauan kepada pemegang polis asuransi tersebut sehingga tidak terjadi kekacauan di dunia perbankan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0727.wav|Dia tidak menduga itu terjadi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0047.wav|supaya rencana itu tidak mubazir, sebaiknya pemerintah membuat peraturan pemerintah pengggati undang undang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0496.wav|Memasuki pertengahan babak pertama, permainan espanyol mulai bermain keras.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0059.wav|dirjen bimas islam dan haji taufik kamil menyebutkan penyelenggara onh plus dinilai ingkar janji.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0243.wav|seorang ahli kesehatan masyarakat, ray fitzpatrick, setuju belaka dengan tafsiran atas hasil studi itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0832.wav|Malah banyak hikmahnya!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0667.wav|Terlalu banyak stres.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0744.wav|Menjaga nafsu makan!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0160.wav|kalau mobil itu dibawa lari ke pelabuhan gilimanuk, atau padangbai, pasti akan terdeteksi.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0386.wav|Saya pikir biar saya fokus betul!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0184.wav|ahqam mengaku tidak menyukai istrinya sendiri.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0443.wav|Tergantung situasi besok!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0509.wav|Kami senang dengan hasilnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0561.wav|Saya sediain kulit kambing lembar tinggal sepuluh lagi!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0397.wav|Ya, misalnya kayak tanah abang lah!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0061.wav|manajer hotel le meridien menanyakan apakah peserta setuju pada chauvinisme?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0033.wav|manchester berada di puncak klasemen sepak bola liga inggris berkat gol tunggal ruud van nistelrooy ke gawang aston villa.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0679.wav|Gol tidak hanya kesalahan satu pemain.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0391.wav|Pemain berpaspor serbia itu pun merasa sangat menikmati debutnya di liga.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0091.wav|ini merupakan salah satu kesimpulan direktur executive.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0623.wav|Saya senang dengan sikap baik cristiano kepada karim.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0003.wav|acara nontonnya jadi kan?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0038.wav|apakah keputusan kabinet akan berpengaruh pada pencapaian target penerimaan bppn?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0271.wav|di situ digelar acara live music menampilkan lagu-lagu nostalgia, serta fashion show selain sexy dance.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0195.wav|pelaku kedapatan membawa dua buah bahan peledak mirip granat ujar brigjen ludwijk kepada wartawan di palangkaraya tadi siang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0796.wav|Total semua adan 5 orang dan semua resmi ditahan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0825.wav|Saya bahagia di sini!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0689.wav|Kalau itu, saya berani mengatakan tidak tertutup kemungkinan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0839.wav|Milenial menganggap perempuan di bawah laki laki.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0306.wav|joko eh avi, meraih video musik indonesia atau vmi award dan music television award.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0436.wav|Tidak ada maksud apa apa mereka mendarat di bali.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0299.wav|raja dangdut rhoma irama dan ratu dangdut elvy sukaesih tampil bersama.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0292.wav|nama jk rowling pun, termasuk dua puluh lima tokoh as pembuat berita versi time.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0070.wav|masyarakat sudah lama merindukan polisi-polisi yang profesional!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0770.wav|Saya menyemangati mereka moga moga lem nya membawa berkah!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0255.wav|tyx adalah sebuah perusahaan kartu telepon internasional.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0393.wav|Foto afp oli scarff.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0085.wav|tiga peserta yaitu mario juanito renaldy, agustine nancy runtuwene, dan bernard sihotang gugur di hari jumat karena alasan medis.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0780.wav|Enggak tahu ya malas!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0320.wav|insiden bermula dari pertengkaran antara oknum cpm yonif lima kosong satu letda aziz dan oknum tni al letda jeremy.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0778.wav|Foto faksimel fainder.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0163.wav|hari ini bppn juga memanggil obligor lainnya, yaitu pemegang saham bank aken i gede dermawan dan i made sudiarta, serta bank mashil utama philip sandra wijaya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0686.wav|Saya berharap begitu menyamai rekor rash.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0356.wav|Kak niki cantik banget!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0632.wav|Saya kira ini hal yang biasa saja!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0605.wav|Ya, seharusnya ternak ternak itu disertai dokumen skkh!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0074.wav|detektor kuman portabel, yang bisa dengan cepat memeriksa instalasi yang dicurigai menyimpan anthrax wabah pes.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0448.wav|Semua harus dihadapi anak anak kecil, sembari mereka tumbuh.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0678.wav|Hz mengindikasikan laju aliran fluida ke permukaan relatif konstan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0489.wav|puji Tuhan semuanya juga lancar.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0147.wav|koordinasi untuk mengintensifkan pencarian orang tersebut, sudah dilakukan antara kepolisian dan kopassus.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0639.wav|Foto twitter aniessa andi.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0463.wav|Kami dibantu dua tim basarnas untuk mencari jenazah korban.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0126.wav|namun, anggota tim penyidik sampai geleng geleng kepala mendengar pengakuan imam cs.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0319.wav|penipu berkedok sebagai wartawan itu, diringkus satgas pdi perjuangan kota semarang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0535.wav|Iya, saya memang lagi ingin sendiri dulu!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0158.wav|sofyan tan mengatakan, pemerintah seharusnya mau mengoreksi diri.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0479.wav|Wib satu malam saja, tidak tiga malam.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0675.wav|Buatlah telur dadar dengan campuran daun bawang yang menggoda!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0790.wav|Karena bagaimanapun anda harus membayar tagihan kartu kredit nantinya!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0260.wav|tabrakan itu memacetkan lalu lintas di jalan bypass klaten.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0762.wav|Bersihkan lantai itu!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0782.wav|Apa di lp menjadi tempat teraman?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0290.wav|tiga hari lalu, kapal penjelajah uss cowpens telah meninggalkan jepang.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0209.wav|dia menjelaskan etnis lain yang mendiami kota medan adalah karo, aceh, nias, simalungun, pakpak, dan lainnya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0247.wav|di kubu valencia, gaizka mendieta akan memainkan peranan vital.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0477.wav|Saya mengapresiasi kehadiran sir bobby usai pertandingan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0638.wav|Khusus di sultra, kami akan berikan kapal rakyat.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0784.wav|Jodohnya kapan dan siapa pasti itu rahasia allah.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0435.wav|Memang idealnya kalau pesantren di sekolah itu bisa sebulan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0379.wav|Ada dua jenis promosi yang dapat anda lakukan!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0018.wav|seratus perwira tinggi dan menengah polri menolak molitisasi polri.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0165.wav|sedang dibicarakan karena belum ada keputusan. kata brigjen edward aritonang.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0106.wav|agenda perjalanan dinas untuk kamtibmas dilakukan setahun sekali.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0124.wav|abu bakar baasyir, mempraperadilankan pemerintah ri cq kepala polri cq, korps reserse polri cq atas penangkapan dan penahanan dirinya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0567.wav|Paling ngumpul ngumpul saja!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0503.wav|Ini tidak bercanda, moonlight anda lah pemenangnya!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0239.wav|gerakan terorisme di timur tengah antara lain black september, lohame herut israel, irgun zvai leumi, dan as-sa'ga.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0114.wav|warga palestina menjadi obyek penghinaan dan opresi.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0415.wav|Kami realistis saja!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0053.wav|dosen universitas cendrawasih, sedang melakukan perbandingan di india mengenai dihapuskannya pajak buku.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0107.wav|abdullah gymnastiar menyatakan, yang sedang berjangkit di negara ini secara umum justru penyakit qolbu atau hati nurani.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0329.wav|disbursement atau pencairan pinjaman itu masih tergantung dari beberapa pekerjaan rumah yang harus dikerjakan oleh pemerintah.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0344.wav|Menurut saya, maudy sangat profesional!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0213.wav|cuaca di beijing saat megawati tiba dalam keadaan cerah, sedangkan suhu udara sekitar empat belas derajat celcius.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0387.wav|Proses adaptasi saya berlangsung luar biasa!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0400.wav|Saya akan tarik biaya sewa!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0236.wav|harga tiket sudah termasuk makan malam, dansa, terompet, topi, dan topeng, serta diiringi musik jazz dari jazz society.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0546.wav|Kebetulan papa kita berdua sudah enggak ada.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0340.wav|perdana menteri jepang junichiro koizumi dan rombongan tiba di bandara ngurah rai.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0584.wav|Selama hari kegiatan operasi februari, orang terlibat narkoba.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0217.wav|elza syarief mengatakan, kepada wartawan bahwa hari ini tommy kembali diperiksa sebagai saksi dalam kasus yang dilaporkannya itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0428.wav|Kami kan belum menerima apa apa!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0562.wav|Gampang kok hafalinnya, paling 2 menit.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0265.wav|sementara itu, anggota komisi i dpr laksama franklin william kayhatu berpendapat berbeda.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0826.wav|Rapat ahirnya ditutup setelah tujuh jam berlangsung.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0125.wav|status pengungsi dari unhcr, kini ditempatkan ke negara lain yang bersedia menerima para pengungsi tersebut.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0476.wav|Ini relaksasi jiwa bagi saya.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0704.wav|Skuad atletico madrid.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0285.wav|hal ini menurut william pfaff, malah akan menambah jumlah orang yang akan membenci amerika.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0614.wav|Korban yang dilaporkan hilang, ada 2 orang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0478.wav|Total yang kami sediakan ada 45.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0412.wav|Garam dan gula secukupnya!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0432.wav|Meter rough sea.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0797.wav|Kasus itu dilaporkan ibu korban sendiri.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0171.wav|jugsor sitohang membantah telah melakukan kejahatan itu!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0600.wav|Sing sering mengunggah foto berbagai aksinya di panggung.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0001.wav|hai selamat pagi apa kabar?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0099.wav|reaksi yang sama, juga terjadi ketika polri berhasil menangkap tazul arifin pelaku pembacokan matori abdul jalil.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0100.wav|mereka diberangkatkan bersama dengan empat personel tim laboratorium forensik atau labfor.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0152.wav|menurut riefqi, setelah kesepakatan damai malino dua pemerintah harus melangkah lebih lanjut.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0155.wav|sepuluh menit kemudian, giliran tendangan halfvolley membentur tanah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0251.wav|ottmar hitzfeld, kini menjadi pelatih bayern muenchen.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0759.wav|Kejadian itu sampai membuat pengawas kami berdarah darah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0235.wav|maqdir ismail mengatakan bahwa kliennya diizinkan berobat ke jepang.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0205.wav|hal ini dikatakan dikdasmen indra jati sidi dalam konferensi pers di gedung depdiknas.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0012.wav|makasih atas bantuannya sebulan lalu.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0518.wav|Selalu adem liat wajahmu teh!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0531.wav|Suasana rumah ahmad dhani.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0629.wav|Inggris sepak bolanya terlihat besik.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0772.wav|Saya tidak mau menyebutnya sebagai masalah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0071.wav|sebelumnya kamboja mengungguli filipina satu nol.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0599.wav|Saya tidak tahu pertimbangan apa yang menjadi dasar itu.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0342.wav|ntt perjuangkan pembangunan tenau internasional di mpr.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0223.wav|di dalam acara itu, dibacakan riwayat hidup almarhum secara anumerta oleh jamwas syahmardan lubis.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0304.wav|tor andrae pernah menjadi bishop lutheran dari linkvping.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0434.wav|Ya, tidak diragukan lagi!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0041.wav|seorang petugas keamanan bandara di bandara hasanuddin, membenarkan hal ini!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0354.wav|Saya akan berdiri di tengah! yang salah saya babat habis!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0305.wav|harian  glas javnosti, selalu menyajikan berita-berita tentang dunia politik.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0543.wav|Jangan terlalu pemilih kalau cari yang sempurna itu mustahil.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0524.wav|Karena saya memang banyak menyimpan kisah pilu!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0579.wav|Liverpool tampak bermain sangat agresif di babak pertama.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0475.wav|Karier bagus bukan berarti tanpa rintangan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0168.wav|padahal secara sadar bangsa indonesia memilih paradigma reformasi dan bukan revolusi untuk agenda agenda perubahan itu!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0650.wav|Dia mengatur kembalinya captain marvel ke bumi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0212.wav|di ruang sidang, terlihat sekitar tiga puluh aktivis laskar jihad takzim mengikuti persidangan.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0661.wav|Aku enggak ada sih keturunan tionghoa!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0300.wav|soeharto dirawat di salah satu ruangan vvip yang berada di lantai vi rspp.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0671.wav|Meteor berasal dari meteorid.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0361.wav|Bermain di arsenal selalu menjadi impian masa kecil saya!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0345.wav|Sepanjang pertandingan, saya telah melihat banyak hal!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0112.wav|bahkan undang undang subversif, yang dijadikan dasar untuk menghukum pemohon tersebut sudah dicabut.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0403.wav|Saya senang dia bisa kembali!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0311.wav|tahun lalu di final dia mengalahkan petenis rusia, yevgeny kafelnikov.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0288.wav|pasalnya sejak tahun dua ribu tidak ada lagi penerimaan pns baru atau zero growth.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0457.wav|Penjagaan berlapis di pintu mako brimob kelapa dua depok.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0150.wav|apalagi pihak caltex, menyatakan safnil memiliki masalah keuangan berupa utang mencapai enam ratus juta rupiah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0004.wav|apakah kamu sudah makan siang?
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0451.wav|Ini merupakan budaya kuil tzu shih yeh kami di sanxia.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0809.wav|Polisi lantas bergegas mencari keberadaan agus.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0105.wav|ketetapan berkaitan dengan pemberantasan korupsi, kolusi, dan nepotisme akibat tekanan publik.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0472.wav|Ya, kalau bisa kami pisahkan dong!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0430.wav|Saya terkejut dengan dimensi!. kata maurer.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0278.wav|direktur perusahaan texmaco ditemukan tewas bunuh diri di hotel.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0769.wav|Dia menyampaikan hujan cukup merata.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0745.wav|Saya senang dengan hasil di laga yang terahir.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0776.wav|Target mah pasti ada ya buat diri aku sendiri!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0822.wav|Memenangkan liga spanyol musim lalu adalah momen terbaik.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0043.wav|namun tambah tosari sikap dasar fraksi tidak akan jauh dari pendapat akhir yang disampaikan pada sidang paripurna dpr.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0214.wav|ia sempat menelpon orang tuanya sesaat setelah pesawat jatuh.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0316.wav|sementara itu, sekjen nato lord robertson mengatakan bahwa pernyataan itu telah disalahpahami.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0394.wav|Jennifer lopez foto oscar.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0362.wav|Dia itu punya filosofi yang luar biasa!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0549.wav|Kemeja batik biru oriental.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0528.wav|Wib rumahnya dimasuki maling.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0576.wav|Meski begitu, imanuel mengaku belum mengetahui siapa pelaku pemilik bom molotov.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0511.wav|Kami sangat menyayangkan ketidakhadiran kedua instansi ini.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0027.wav|mereka antara lain menyerang konvoi anggota alqaeda dan warga taliban.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0697.wav|Dia adalah pemilik amazon.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0204.wav|langkah presiden wahid merupakan akibat dari ketidakcermatan presiden melihat situasi politik.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0079.wav|setelah bersalaman dengan kyai haji faqih, mega mengulurkan tangannya kepada abdurrahman.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0044.wav|keputusannya nanti tentu tidak bisa dilepaskan dengan sounding sesama fraksi.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0382.wav|Menurut dia, motif pengeroyokan itu karena persoalan sepele.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0062.wav|tiga puluh enam penumpang kereta api mutiara timur, jurusan surabaya banyuwangi, luka-luka akibat tiga gerbong anjlok di kawasan kecamatan rejoso.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0335.wav|kata abu sofyan daud, forum debat mahasiswa timor-timur coimbra-portugal mengeluarkan pernyataan berkaitan kongres.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0835.wav|Plis sering sering mampir ke mimpi saya ya!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0655.wav|Anda bisa lihat dia, mourinho memiliki mentalitas seorang pemenang.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0781.wav|Ambil contoh musim ini!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0598.wav|Brightest flashlight memiliki fungsi layaknya aplikasi flashlight.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0414.wav|Ronaldo saat mengelabui buffon di musim ke dua.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0532.wav|Pemerintah tetap sangat pendiam.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0620.wav|Saya nyesel bang!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0011.wav|jangan sampai pulang terlambat!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0801.wav|Hari ini hari peringatan itu lagi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0157.wav|satu di antaranya, rektor sekolah menengah seminari mertoyudan fx adisusanto sj.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0028.wav|bendera lama kerajaan berwarna merah hitam dan hijau.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0374.wav|Jadi saya punya empat orang tua.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0170.wav|taolu chagquan merupakan salah satu cabang wushu yang diperlombakan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0248.wav|penetapan gizjeling, atau hukum badan terhadap debitor yang tidak kooperatif patut untuk benar-benar dipertimbangkan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0007.wav|cepat istirahat dan mimpi yang indah.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0657.wav|Saya adalah pesepakbola yang paling bahagia di dunia!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0469.wav|Griezmann tinggal di atleti, kami senang dia tetap tinggal!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0507.wav|Erik adalah daftar lengkap prediksi pemenang oskar versi kollider.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0732.wav|Baca juga perjalanan karier alan severus snape rickman.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0764.wav|Kim jong nam memiliki dua istri dan dua anak.
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0738.wav|Ini datang dari mana?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0046.wav|kepala bidang konsuler kbri khairul sulaiman dan stafnya oktaviano alimuddin mendampingi ketiga warga indonesia.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0323.wav|akibatnya, masukan dan kritik masyarakat terhadap uu tersebut belum dapat dilakukan sekarang!
+dataset/ITKTTS-IDN/utterance/ITKTTS002-0713.wav|Kami percaya pada netralitas bersih di amerika.

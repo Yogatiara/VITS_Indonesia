@@ -1,0 +1,3 @@
+[submodule "evaluate/Resemblyzer"]
+	path = evaluate/Resemblyzer
+	url = https://github.com/resemble-ai/Resemblyzer.git

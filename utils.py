@@ -8,6 +8,8 @@ import subprocess
 import numpy as np
 from scipy.io.wavfile import read
 import torch
+import soundfile as sf
+
 
 MATPLOTLIB_FLAG = False
 
@@ -45,7 +47,7 @@ def load_checkpoint(checkpoint_path, model, optimizer=None):
 
 
 def save_checkpoint(model, optimizer, learning_rate, iteration, checkpoint_path):
-  logger.info("Saving model and optimizer state at iteration {} to {} 📥".format(
+  logger.info("Saving model and optimizer state at iteration {} to {}".format(
     iteration, checkpoint_path))
   if hasattr(model, 'module'):
     state_dict = model.module.state_dict()
@@ -95,6 +97,7 @@ def latest_checkpoint_path(dir_path, regex="G_*.pth"):
 
 def remove_old_checkpoints(cp_dir, boundary_sorted_ckpts, prefixes=['D_*.pth']):
     for prefix in prefixes:
+        # print(prefix)
         sorted_ckpts = scan_checkpoint(cp_dir, prefix)
         if sorted_ckpts and len(sorted_ckpts) > boundary_sorted_ckpts:
             for ckpt_path in sorted_ckpts[:-boundary_sorted_ckpts]:
@@ -155,10 +158,13 @@ def plot_alignment_to_numpy(alignment, info=None):
   plt.close()
   return data
 
-
 def load_wav_to_torch(full_path):
   sampling_rate, data = read(full_path)
   return torch.FloatTensor(data.astype(np.float32)), sampling_rate
+
+# def load_wav_to_torch(full_path):
+#     data, sampling_rate = sf.read(full_path, dtype='float32')
+#     return torch.FloatTensor(data), sampling_rate
 
 
 def load_filepaths_and_text(filename, split="|"):

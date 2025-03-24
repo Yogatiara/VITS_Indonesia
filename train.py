@@ -33,7 +33,7 @@ from losses import (
 from mel_processing import mel_spectrogram_torch, spec_to_mel_torch
 from text.symbols import symbols
 
-best_loss_gen_all = float('inf')
+
 torch.backends.cudnn.benchmark = True
 global_step = 0
 
@@ -121,8 +121,7 @@ def run(rank, n_gpus, hps):
     scheduler_d.step()
 
 
-def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loaders, logger, writers):
-  global best_loss_gen_all    
+def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loaders, logger, writers):   
   net_g, net_d = nets
   optim_g, optim_d = optims
   scheduler_g, scheduler_d = schedulers
@@ -205,7 +204,7 @@ def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loade
         # logger.info([x.item() for x in losses] + [global_step, lr])
 
         loss_names = ['Disc Loss', 'Gen Loss', 'FM Loss', 'Mel Loss', 'Dur Loss', 'KL Loss']
-        logger.info('Train Epoch: {} [{:.0f}%] ⏳'.format(
+        logger.info('Train Epoch: {} [{:.0f}%]'.format(
             epoch,
             100. * batch_idx / len(train_loader)))
 
@@ -230,25 +229,19 @@ def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loade
         }
         utils.summarize(
           writer=writer,
-          global_step=global_step,
+          global_step=global_step, 
           images=image_dict,
           scalars=scalar_dict)
 
       if global_step % hps.train.eval_interval == 0:
         evaluate(hps, net_g, eval_loader, writer_eval)
-        model_path = os.path.join(hps.model_dir, "G_{}.pth".format(global_step))
-        if loss_gen_all.item() < best_loss_gen_all:
-          best_loss_gen_all = loss_gen_all.item()
-          utils.save_checkpoint(net_g, optim_g, hps.train.learning_rate, epoch, model_path)
-          old_files = [f for f in os.listdir(hps.model_dir) if f.startswith("G_") and f.endswith(".pth") and f != os.path.basename(model_path)]
-          for old_file in old_files:
-            os.remove(os.path.join(hps.model_dir, old_file))
+        utils.save_checkpoint(net_g, optim_g, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "G_{}.pth".format(global_step)))
         utils.save_checkpoint(net_d, optim_d, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "D_{}.pth".format(global_step)))
-        utils.remove_old_checkpoints(hps.model_dir, hps.train.boundary_sorted_ckpts, prefixes=["D_*.pth"])
-      global_step += 1
+        utils.remove_old_checkpoints(hps.model_dir,hps.train.boundary_sorted_ckpts, prefixes=["D_*.pth"])
+    global_step += 1
   
   if rank == 0:
-    logger.info('====> Epoch: {} ✅'.format(epoch))
+    logger.info('====> Epoch: {} '.format(epoch))
 
  
 def evaluate(hps, generator, eval_loader, writer_eval):

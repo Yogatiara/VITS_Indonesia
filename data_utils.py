@@ -89,7 +89,7 @@ class TextAudioLoader(torch.utils.data.Dataset):
         # Save spectrogram
         try:
             torch.save(spec, spec_filename)
-            print(f"Successfully saved {spec_filename} ✅")
+            print(f"Successfully saved {spec_filename}")
         except Exception as e:
             raise RuntimeError(f"Failed to save {spec_filename}: {e}")
 

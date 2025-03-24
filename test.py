@@ -9,13 +9,13 @@
 # dist.init_process_group(backend="nccl", init_method="tcp://127.0.0.1:29500", rank=0, world_size=1)
 # print("NCCL Initialized successfully!")
 
-import numpy as np
-import librosa
-import matplotlib.pyplot as plt
-import scipy
-import soundfile as sf
-import scipy.fftpack as fft
-from scipy.signal import medfilt
+# import numpy as np
+# import librosa
+# import matplotlib.pyplot as plt
+# import scipy
+# import soundfile as sf
+# import scipy.fftpack as fft
+# from scipy.signal import medfilt
 
 # import os
 
@@ -32,6 +32,32 @@ from scipy.signal import medfilt
 #         print(f"Renamed: {filename} -> {new_filename}")
 
 # print("berhasil")
+
+
+# input_file = "./dataset/ITKTTS-IDN/transkrip.txt"
+
+# with open(input_file, "r", encoding="utf-8") as f:
+#     lines = f.readlines()
+
+# with open(input_file, "w", encoding="utf-8") as f:
+#     for line in lines:
+#         updated_line = "dataset/ITKTTS-IDN/utterance/" + line.strip()
+#         f.write(updated_line  + "\n")
+
+
+# print("selesai")
+
+
+
+# from tensorboard.backend.event_processing.event_file_loader import EventFileLoader
+
+# event_path = "./logs/ITKTTS_2/events.out.tfevents.1740562819.dl-1-OMEN-by-HP-40L-Gaming-Desktop-GT21-1xxx.39337.0"
+# try:
+#     for event in EventFileLoader(event_path).Load():
+#         print(event)
+#     print("File is readable.")
+# except Exception as e:
+#     print(f"Error reading event file: {e}")
 
 # import numpy as np
 # import librosa
@@ -93,8 +119,9 @@ from scipy.signal import medfilt
 # print(f"Sample rate: {sr}, Duration: {len(y)/sr:.2f} sec")
 import glob
 import os
+# "audio_boundaries": [40,200,300,400,500,600,700,800,900,1000, 1200, 1400],
 
-# # Path ke folder dataset
+# # # Path ke folder dataset
 dataset_path = "dataset/ITKTTS-IDN/utterance"  # Ganti dengan path yang benar
 
 # Cari semua file .pt dalam folder dataset
@@ -105,30 +132,3 @@ for file in pt_files:
     os.remove(file)
     print(f"Deleted: {file}")
 
-
-# import torch
-
-# def load_and_fix_spectrogram(spec_filename):
-#     spec = torch.load(spec_filename)
-
-#     print("Original shape:", spec.shape)
-
-#     # Jika tensor memiliki batch dimension (1, freq, time), squeeze
-#     if len(spec.shape) == 3 and spec.shape[0] == 1:
-#         spec = spec.squeeze(0)
-#     elif len(spec.shape) != 2:
-#         raise ValueError(f"Unexpected shape {spec.shape}, expected (freq, time)")
-
-#     print("Final shape:", spec.shape)
-#     return spec
-
-# # Contoh pemanggilan
-# spec = load_and_fix_spectrogram("DUMMY1/LJ001-0002.spec.pt")
-
-# plt.figure(figsize=(10, 5))
-# plt.imshow(spec.numpy(), aspect='auto', origin='lower', cmap='magma')
-# plt.colorbar(label="Magnitude")
-# plt.title("Spectrogram")
-# plt.xlabel("Time Frames")
-# plt.ylabel("Frequency Bins")
-# plt.show()

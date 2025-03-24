@@ -1,7 +1,7 @@
 import chardet
 
-input_file = 'dataset/ITKTTS-IDN/transkip.txt'
-output_file = 'dataset/ITKTTS-IDN/new_transkip.txt'
+input_file = 'dataset/ITKTTS-IDN/transkrip.txt'
+output_file = 'dataset/ITKTTS-IDN/new_transkrip.txt'
 
 with open(input_file, 'rb') as f:
     raw_data = f.read()

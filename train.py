@@ -3,6 +3,10 @@ import json
 import argparse
 import itertools
 import math
+import warnings
+warnings.filterwarnings("ignore", category=FutureWarning)
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
 import torch
 from torch import nn, optim
 from torch.nn import functional as F
@@ -12,6 +16,7 @@ import torch.multiprocessing as mp
 import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 from torch.cuda.amp import autocast, GradScaler
+import tqdm
 
 import commons
 import utils
@@ -23,7 +28,9 @@ from data_utils import (
 from models import (
   SynthesizerTrn,
   MultiPeriodDiscriminator,
-)
+  DurationDiscriminator
+  )
+
 from losses import (
   generator_loss,
   discriminator_loss,
@@ -36,24 +43,34 @@ from text.symbols import symbols
 
 torch.backends.cudnn.benchmark = True
 global_step = 0
+use_duration_discriminator = False
+
 
 
 def main():
+  hps = utils.get_hparams()
+
   """Assume Single Node Multi GPUs Training Only"""
   assert torch.cuda.is_available(), "CPU training is not allowed."
-
+  print(f"-----{torch.cuda.get_device_name(0)}-----")
   n_gpus = torch.cuda.device_count()
-  os.environ['MASTER_ADDR'] = 'localhost'
-  os.environ['MASTER_PORT'] = '80000'
+  print(f"{'-----Single GPU-----' if n_gpus <= 1 else '-----Multiple GPU-----'}")
 
-  hps = utils.get_hparams()
+  if hps.train.eight_bit_optimizer:
+    print("-----Using 8-bit optimizer-----")
+
+  os.environ['MASTER_ADDR'] = 'localhost'
+  # berubah
+  os.environ['MASTER_PORT'] = hps.train.port
+
 
   mp.spawn(run, nprocs=n_gpus, args=(n_gpus, hps,))
 
 
 def run(rank, n_gpus, hps):
-  global global_step
-  if rank == 0:
+  global global_step, use_duration_discriminator
+  
+  if n_gpus <= 1 or rank == 0:
     logger = utils.get_logger(hps.model_dir)
     logger.info(hps)
     utils.check_git_hash(hps.model_dir)
@@ -64,48 +81,113 @@ def run(rank, n_gpus, hps):
     dist.init_process_group(backend='nccl', init_method='env://', world_size=n_gpus, rank=rank)
   torch.manual_seed(hps.train.seed)
   torch.cuda.set_device(rank)
+  
 
   train_dataset = TextAudioLoader(hps.data.training_files, hps.data)
-  if n_gpus > 1:
+
+  collate_fn = TextAudioCollate()
+  
+  if n_gpus <= 1:
+    train_loader = DataLoader(
+        train_dataset, num_workers=0, shuffle=True, pin_memory=True,
+        collate_fn=collate_fn, batch_size=hps.train.batch_size
+    )
+  else:
     train_sampler = DistributedBucketSampler(
         train_dataset, hps.train.batch_size, hps.data.audio_boundaries, 
         num_replicas=n_gpus, rank=rank, shuffle=True
     )
-  else:
-      train_sampler = None
-  collate_fn = TextAudioCollate()
-  train_loader = DataLoader(train_dataset, num_workers=8, shuffle=(train_sampler is None), pin_memory=True,
-      collate_fn=collate_fn, batch_sampler=train_sampler)
-  if rank == 0:
+    train_loader = DataLoader(
+        train_dataset, num_workers=0, pin_memory=True,
+        collate_fn=collate_fn, batch_sampler=train_sampler
+    )
+  if n_gpus <= 1 or rank == 0:
     eval_dataset = TextAudioLoader(hps.data.validation_files, hps.data)
-    eval_loader = DataLoader(eval_dataset, num_workers=8, shuffle=False,
+    eval_loader = DataLoader(eval_dataset, num_workers=0, shuffle=False,
         batch_size=hps.train.batch_size, pin_memory=True,
         drop_last=False, collate_fn=collate_fn)
+    
+  
+  if hps.model.use_duration_discriminator:
+    use_duration_discriminator = True
+    print("-----Using duration predictor-----")
+    net_dur_disc = DurationDiscriminator(
+      hps.model.hidden_channels,
+      hps.model.hidden_channels,
+      hps.model.kernel_size,
+      hps.model.p_dropout,
+      gin_channels=hps.model.gin_channels if hps.data.n_speakers != 0 else 0
+    ).cuda(rank)
+  else:
+    net_dur_disc = None
+    use_duration_discriminator = False
 
+  
   net_g = SynthesizerTrn(
       len(symbols),
       hps.data.filter_length // 2 + 1,
       hps.train.segment_size // hps.data.hop_length,
       **hps.model).cuda(rank)
   net_d = MultiPeriodDiscriminator(hps.model.use_spectral_norm).cuda(rank)
-  optim_g = torch.optim.AdamW(
-      net_g.parameters(), 
-      hps.train.learning_rate, 
-      betas=hps.train.betas, 
-      eps=hps.train.eps)
-  optim_d = torch.optim.AdamW(
-      net_d.parameters(),
-      hps.train.learning_rate, 
-      betas=hps.train.betas, 
-      eps=hps.train.eps)
+
+  if hps.train.eight_bit_optimizer:
+    import bitsandbytes as bnb
+    optim_g = bnb.optim.AdamW(
+        net_g.parameters(), 
+        hps.train.learning_rate, 
+        betas=hps.train.betas, 
+        eps=hps.train.eps)
+    optim_d = bnb.optim.AdamW8bit(
+        net_d.parameters(),
+        hps.train.learning_rate, 
+        betas=hps.train.betas, 
+        eps=hps.train.eps)
+    if net_dur_disc is not None:
+      optim_dur_disc = bnb.optim.AdamW8bit(
+        net_dur_disc.parameters(),
+        hps.train.learning_rate,
+        betas=hps.train.betas,
+        eps = hps.train.eps
+    ) 
+    else:
+      optim_dur_disc = None
+
+  else:
+    optim_g = torch.optim.AdamW(
+        net_g.parameters(), 
+        hps.train.learning_rate, 
+        betas=hps.train.betas, 
+        eps=hps.train.eps)
+    optim_d = torch.optim.AdamW(
+        net_d.parameters(),
+        hps.train.learning_rate, 
+        betas=hps.train.betas, 
+        eps=hps.train.eps)
+  
+    if net_dur_disc is not None:
+      optim_dur_disc = torch.optim.AdamW(
+        net_dur_disc.parameters(),
+        hps.train.learning_rate,
+        betas=hps.train.betas,
+        eps = hps.train.eps
+    ) 
+    else:
+      optim_dur_disc = None
+    
   
   if n_gpus > 1:
     net_g = DDP(net_g, device_ids=[rank])
     net_d = DDP(net_d, device_ids=[rank])
 
+    if net_dur_disc is not None:
+      net_dur_disc = DDP(net_dur_disc, device_ids=[rank])
+
   try:
     _, _, _, epoch_str = utils.load_checkpoint(utils.latest_checkpoint_path(hps.model_dir, "G_*.pth"), net_g, optim_g)
     _, _, _, epoch_str = utils.load_checkpoint(utils.latest_checkpoint_path(hps.model_dir, "D_*.pth"), net_d, optim_d)
+
+    if net_dur_disc is not None:
+       _, _, _, epoch_str = utils.load_checkpoint(utils.latest_checkpoint_path(hps.model_dir, "DUR_*.pth"), net_dur_disc, optim_dur_disc)
     global_step = (epoch_str - 1) * len(train_loader)
   except:
     epoch_str = 1
@@ -114,69 +196,106 @@ def run(rank, n_gpus, hps):
   scheduler_g = torch.optim.lr_scheduler.ExponentialLR(optim_g, gamma=hps.train.lr_decay, last_epoch=epoch_str-2)
   scheduler_d = torch.optim.lr_scheduler.ExponentialLR(optim_d, gamma=hps.train.lr_decay, last_epoch=epoch_str-2)
 
+  if net_dur_disc is not None:
+    scheduler_dur_disc = torch.optim.lr_scheduler.ExponentialLR(optim_dur_disc, gamma=hps.train.lr_decay, last_epoch=epoch_str-2)
+  else:
+    scheduler_dur_disc = None
+
   scaler = GradScaler(enabled=hps.train.fp16_run)
 
   for epoch in range(epoch_str, hps.train.epochs + 1):
-    if rank==0:
-      train_and_evaluate(n_gpus, rank, epoch, hps, [net_g, net_d], [optim_g, optim_d], [scheduler_g, scheduler_d], scaler, [train_loader, eval_loader], logger, [writer, writer_eval])
+    if n_gpus <= 1:
+      train_and_evaluate(n_gpus, rank, epoch, hps, [net_g, net_d, net_dur_disc], [optim_g, optim_d, optim_dur_disc], [scheduler_g, scheduler_d, scheduler_dur_disc], scaler, [train_loader, eval_loader], logger, [writer, writer_eval])
     else:
-      train_and_evaluate(n_gpus, rank, epoch, hps, [net_g, net_d], [optim_g, optim_d], [scheduler_g, scheduler_d], scaler, [train_loader, None], None, None)
+      if rank==0:
+        train_and_evaluate(n_gpus, rank, epoch, hps, [net_g, net_d, net_dur_disc], [optim_g, optim_d, optim_dur_disc], [scheduler_g, scheduler_d, scheduler_dur_disc], scaler, [train_loader, eval_loader], logger, [writer, writer_eval])
+      else:
+        train_and_evaluate(n_gpus, rank, epoch, hps, [net_g, net_d, net_dur_disc], [optim_g, optim_d, optim_dur_disc], [scheduler_g, scheduler_d, scheduler_dur_disc], scaler, [train_loader, None], None, None)
+
     scheduler_g.step()
     scheduler_d.step()
+    if net_dur_disc is not None:
+      scheduler_dur_disc.step()
 
 
 def train_and_evaluate(n_gpus, rank, epoch, hps, nets, optims, schedulers, scaler, loaders, logger, writers):   
-  net_g, net_d = nets
-  optim_g, optim_d = optims
-  scheduler_g, scheduler_d = schedulers
+  net_g, net_d, net_dur_disc = nets
+  optim_g, optim_d, optim_dur_disc = optims
   train_loader, eval_loader = loaders
   if writers is not None:
     writer, writer_eval = writers
 
   if n_gpus > 1:
     train_loader.batch_sampler.set_epoch(epoch)
-  elif n_gpus <= 1:
-    train_loader.batch_sampler
+
   global global_step
 
   net_g.train()
   net_d.train()
-  for batch_idx, (x, x_lengths, spec, spec_lengths, y, y_lengths) in enumerate(train_loader):
+
+  if net_dur_disc is not None:
+      net_dur_disc.train()
+
+  if n_gpus <= 1:
+    loader = tqdm.tqdm(train_loader, desc="Loading train data")
+  else:
+    if rank == 0:
+      loader = tqdm.tqdm(train_loader, desc="Loading train data")
+    else:
+      loader = train_loader
+
+  for batch_idx, (x, x_lengths, spec, spec_lengths, y, y_lengths) in enumerate(loader):
     x, x_lengths = x.cuda(rank, non_blocking=True), x_lengths.cuda(rank, non_blocking=True)
     spec, spec_lengths = spec.cuda(rank, non_blocking=True), spec_lengths.cuda(rank, non_blocking=True)
     y, y_lengths = y.cuda(rank, non_blocking=True), y_lengths.cuda(rank, non_blocking=True)
-
+    
     with autocast(enabled=hps.train.fp16_run):
       y_hat, l_length, attn, ids_slice, x_mask, z_mask,\
-      (z, z_p, m_p, logs_p, m_q, logs_q) = net_g(x, x_lengths, spec, spec_lengths)
+      (z, z_p, m_p, logs_p, m_q, logs_q), (hidden_x, logw, logw_) = net_g(x, x_lengths, spec, spec_lengths)
 
       mel = spec_to_mel_torch(
-          spec, 
+          spec,
           hps.data.filter_length, 
           hps.data.n_mel_channels, 
           hps.data.sampling_rate,
           hps.data.mel_fmin, 
           hps.data.mel_fmax)
       y_mel = commons.slice_segments(mel, ids_slice, hps.train.segment_size // hps.data.hop_length)
-    y_hat = y_hat.float()
-    y_hat_mel = mel_spectrogram_torch(
-      y_hat.squeeze(1), 
-      hps.data.filter_length, 
-      hps.data.n_mel_channels, 
-      hps.data.sampling_rate, 
-      hps.data.hop_length, 
-      hps.data.win_length, 
-      hps.data.mel_fmin, 
-      hps.data.mel_fmax
-    )
+      y_hat = y_hat.float()
+      y_hat_mel = mel_spectrogram_torch(
+        y_hat.squeeze(1), 
+        hps.data.filter_length, 
+        hps.data.n_mel_channels, 
+        hps.data.sampling_rate, 
+        hps.data.hop_length, 
+        hps.data.win_length, 
+        hps.data.mel_fmin, 
+        hps.data.mel_fmax
+      )
 
-    y = commons.slice_segments(y, ids_slice * hps.data.hop_length, hps.train.segment_size) # slice 
+      y = commons.slice_segments(y, ids_slice * hps.data.hop_length, hps.train.segment_size) # slice 
 
-      # Discriminator
-    y_d_hat_r, y_d_hat_g, _, _ = net_d(y, y_hat.detach())
-    with autocast(enabled=False):
-      loss_disc, losses_disc_r, losses_disc_g = discriminator_loss(y_d_hat_r, y_d_hat_g)
-      loss_disc_all = loss_disc
+        # Discriminator
+      y_d_hat_r, y_d_hat_g, _, _ = net_d(y, y_hat.detach())
+      with autocast(enabled=False):
+        loss_disc, losses_disc_r, losses_disc_g = discriminator_loss(y_d_hat_r, y_d_hat_g)
+        loss_disc_all = loss_disc
+
+        # Duration Discriminator
+      if net_dur_disc is not None:
+        y_dur_hat_r, y_dur_hat_g = net_dur_disc(hidden_x.detach(), x_mask.detach(), logw_.detach(), logw.detach())
+        with autocast(enabled=False):
+          loss_dur_disc, losses_disc_r, losses_disc_g = discriminator_loss(y_dur_hat_r, y_dur_hat_g)
+          loss_dur_disc_all = loss_dur_disc
+
+        optim_dur_disc.zero_grad()
+        scaler.scale(loss_dur_disc_all).backward()
+        scaler.unscale_(optim_dur_disc)
+        grad_norm_dur_disc = commons.clip_grad_value_(
+          net_dur_disc.parameters(), None
+        )
+        scaler.step(optim_dur_disc)
+
     optim_d.zero_grad()
     scaler.scale(loss_disc_all).backward()
     scaler.unscale_(optim_d)
@@ -186,14 +305,21 @@ def train_and_evaluate(n_gpus, rank, epoch, hps, nets, optims, schedulers, scale
     with autocast(enabled=hps.train.fp16_run):
       # Generator
       y_d_hat_r, y_d_hat_g, fmap_r, fmap_g = net_d(y, y_hat)
+      if net_dur_disc is not None:
+        y_dur_hat_r, y_dur_hat_g = net_dur_disc(hidden_x, x_mask, logw_, logw)
       with autocast(enabled=False):
         loss_dur = torch.sum(l_length.float())
         loss_mel = F.l1_loss(y_mel, y_hat_mel) * hps.train.c_mel
+
         loss_kl = kl_loss(z_p, logs_q, m_p, logs_p, z_mask) * hps.train.c_kl
 
         loss_fm = feature_loss(fmap_r, fmap_g)
         loss_gen, losses_gen = generator_loss(y_d_hat_g)
         loss_gen_all = loss_gen + loss_fm + loss_mel + loss_dur + loss_kl
+        if net_dur_disc is not None:
+          loss_dur_gen, losses_dur_gen = generator_loss(y_dur_hat_g)
+          loss_gen_all += loss_dur_gen
+
     optim_g.zero_grad()
     scaler.scale(loss_gen_all).backward()
     scaler.unscale_(optim_g)
@@ -201,14 +327,10 @@ def train_and_evaluate(n_gpus, rank, epoch, hps, nets, optims, schedulers, scale
     scaler.step(optim_g)
     scaler.update()
 
-    if rank==0:
+    if n_gpus <= 1 or rank==0:
       if global_step % hps.train.log_interval == 0:
         lr = optim_g.param_groups[0]['lr']
         losses = [loss_disc, loss_gen, loss_fm, loss_mel, loss_dur, loss_kl]
-        # logger.info('Train Epoch: {} [{:.0f}%]'.format(
-        #   epoch,
-        #   100. * batch_idx / len(train_loader)))
-        # logger.info([x.item() for x in losses] + [global_step, lr])
 
         loss_names = ['Disc Loss', 'Gen Loss', 'FM Loss', 'Mel Loss', 'Dur Loss', 'KL Loss']
         logger.info('Train Epoch: {} [{:.0f}%]'.format(
@@ -223,11 +345,20 @@ def train_and_evaluate(n_gpus, rank, epoch, hps, nets, optims, schedulers, scale
         logger.info('Global Step: {}, Learning Rate: {}, total loss: {}'.format(global_step, lr, loss_gen_all))
         
         scalar_dict = {"loss/g/total": loss_gen_all, "loss/d/total": loss_disc_all, "learning_rate": lr, "grad_norm_d": grad_norm_d, "grad_norm_g": grad_norm_g}
+        if net_dur_disc is not None:
+          scalar_dict.update({"loss/dur_disc/total": loss_dur_disc_all})
+
         scalar_dict.update({"loss/g/fm": loss_fm, "loss/g/mel": loss_mel, "loss/g/dur": loss_dur, "loss/g/kl": loss_kl})
 
         scalar_dict.update({"loss/g/{}".format(i): v for i, v in enumerate(losses_gen)})
         scalar_dict.update({"loss/d_r/{}".format(i): v for i, v in enumerate(losses_disc_r)})
         scalar_dict.update({"loss/d_g/{}".format(i): v for i, v in enumerate(losses_disc_g)})
+
+        if net_dur_disc is not None:
+          scalar_dict.update({"loss/dur_gen/{}".format(i): v for i, v in enumerate(losses_dur_gen)})
+          scalar_dict.update({"loss/dur_disc_r/{}".format(i): v for i, v in enumerate(losses_disc_r)})
+          scalar_dict.update({"loss/d_disc_g/{}".format(i): v for i, v in enumerate(losses_disc_g)})
+
         image_dict = { 
             "slice/mel_org": utils.plot_spectrogram_to_numpy(y_mel[0].data.cpu().numpy()),
             "slice/mel_gen": utils.plot_spectrogram_to_numpy(y_hat_mel[0].data.cpu().numpy()), 
@@ -244,10 +375,13 @@ def train_and_evaluate(n_gpus, rank, epoch, hps, nets, optims, schedulers, scale
         evaluate(n_gpus, hps, net_g, eval_loader, writer_eval)
         utils.save_checkpoint(net_g, optim_g, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "G_{}.pth".format(global_step)))
         utils.save_checkpoint(net_d, optim_d, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "D_{}.pth".format(global_step)))
-        utils.remove_old_checkpoints(hps.model_dir,hps.train.boundary_sorted_ckpts, prefixes=["D_*.pth"])
+
+        if net_dur_disc is not None:
+          utils.save_checkpoint(net_dur_disc, optim_dur_disc, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "DUR_{}.pth".format(global_step)))
+        utils.remove_old_checkpoints(hps.model_dir,hps.train.boundary_sorted_ckpts, prefixes=hps.train.remove_model_ckpts)
     global_step += 1
   
-  if rank == 0:
+  if n_gpus <= 1 or rank == 0:
     logger.info('====> Epoch: {} '.format(epoch))
 
  
@@ -266,11 +400,11 @@ def evaluate(n_gpus, hps, generator, eval_loader, writer_eval):
         spec_lengths = spec_lengths[:1]
         y = y[:1]
         y_lengths = y_lengths[:1]
-        break
-      if n_gpus > 1:
-        y_hat, attn, mask, *_ = generator.module.infer(x, x_lengths, max_len=1000)
-      else:
+        # break
+      if n_gpus <= 1:
         y_hat, attn, mask, *_ = generator.infer(x, x_lengths, max_len=1000)
+      else:
+        y_hat, attn, mask, *_ = generator.module.infer(x, x_lengths, max_len=1000)
       y_hat_lengths = mask.sum([1,2]).long() * hps.data.hop_length
 
       mel = spec_to_mel_torch(

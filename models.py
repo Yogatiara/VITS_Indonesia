@@ -96,6 +96,7 @@ class StochasticDurationPredictor(nn.Module):
 
 
 class DurationPredictor(nn.Module):
+
   def __init__(self, in_channels, filter_channels, kernel_size, p_dropout, gin_channels=0):
     super().__init__()
 
@@ -131,6 +132,76 @@ class DurationPredictor(nn.Module):
     x = self.proj(x * x_mask)
     return x * x_mask
 
+
+# ditambah
+class DurationDiscriminator(nn.Module):
+    def __init__(
+        self, in_channels, filter_channels, kernel_size, p_dropout, gin_channels=0
+    ):
+        super().__init__()
+
+        self.in_channels = in_channels
+        self.filter_channels = filter_channels
+        self.kernel_size = kernel_size
+        self.p_dropout = p_dropout
+        self.gin_channels = gin_channels
+
+        self.conv_1 = nn.Conv1d(
+            in_channels, filter_channels, kernel_size, padding=kernel_size // 2
+        )
+        self.norm_1 = modules.LayerNorm(filter_channels)
+        self.conv_2 = nn.Conv1d(
+            filter_channels, filter_channels, kernel_size, padding=kernel_size // 2
+        )
+        self.norm_2 = modules.LayerNorm(filter_channels)
+        self.dur_proj = nn.Conv1d(1, filter_channels, 1)
+
+        self.pre_out_conv_1 = nn.Conv1d(
+            2 * filter_channels, filter_channels, kernel_size, padding=kernel_size // 2
+        )
+        self.pre_out_norm_1 = modules.LayerNorm(filter_channels)
+        self.pre_out_conv_2 = nn.Conv1d(
+            filter_channels, filter_channels, kernel_size, padding=kernel_size // 2
+        )
+        self.pre_out_norm_2 = modules.LayerNorm(filter_channels)
+
+        # if gin_channels != 0:
+        #   self.cond = nn.Conv1d(gin_channels, in_channels, 1)
+
+        self.output_layer = nn.Sequential(nn.Linear(filter_channels, 1), nn.Sigmoid())
+
+    def forward_probability(self, x, x_mask, dur, g=None):
+        dur = self.dur_proj(dur)
+        x = torch.cat([x, dur], dim=1)
+        x = self.pre_out_conv_1(x * x_mask)
+        x = torch.relu(x)
+        x = self.pre_out_norm_1(x)
+        x = self.pre_out_conv_2(x * x_mask)
+        x = torch.relu(x)
+        x = self.pre_out_norm_2(x)
+        x = x * x_mask
+        x = x.transpose(1, 2)
+        output_prob = self.output_layer(x)
+        return output_prob
+
+    def forward(self, x, x_mask, dur_r, dur_hat, g=None):
+        x = torch.detach(x)
+        # if g is not None:
+        #   g = torch.detach(g)
+        #   x = x + self.cond(g)
+        x = self.conv_1(x * x_mask)
+        x = torch.relu(x)
+        x = self.norm_1(x)
+        x = self.conv_2(x * x_mask)
+        x = torch.relu(x)
+        x = self.norm_2(x)
+
+        output_probs = []
+        for dur in [dur_r, dur_hat]:
+            output_prob = self.forward_probability(x, x_mask, dur, g)
+            output_probs.append([output_prob])
+
+        return output_probs
 
 class TextEncoder(nn.Module):
   def __init__(self,
@@ -435,6 +506,8 @@ class SynthesizerTrn(nn.Module):
     self.gin_channels = gin_channels
 
     self.use_sdp = use_sdp
+    self.use_duration_discriminator = kwargs.get("use_duration_discriminator", False)
+
 
     self.enc_p = TextEncoder(n_vocab,
         inter_channels,
@@ -457,44 +530,72 @@ class SynthesizerTrn(nn.Module):
       self.emb_g = nn.Embedding(n_speakers, gin_channels)
 
   def forward(self, x, x_lengths, y, y_lengths, sid=None):
+    if self.n_speakers > 0:
+        g = self.emb_g(sid).unsqueeze(-1)  # [b, h, 1]
+    else:
+        g = None
 
     x, m_p, logs_p, x_mask = self.enc_p(x, x_lengths)
-    if self.n_speakers > 0:
-      g = self.emb_g(sid).unsqueeze(-1) # [b, h, 1]
-    else:
-      g = None
-
     z, m_q, logs_q, y_mask = self.enc_q(y, y_lengths, g=g)
     z_p = self.flow(z, y_mask, g=g)
 
     with torch.no_grad():
-      # negative cross-entropy
-      s_p_sq_r = torch.exp(-2 * logs_p) # [b, d, t]
-      neg_cent1 = torch.sum(-0.5 * math.log(2 * math.pi) - logs_p, [1], keepdim=True) # [b, 1, t_s]
-      neg_cent2 = torch.matmul(-0.5 * (z_p ** 2).transpose(1, 2), s_p_sq_r) # [b, t_t, d] x [b, d, t_s] = [b, t_t, t_s]
-      neg_cent3 = torch.matmul(z_p.transpose(1, 2), (m_p * s_p_sq_r)) # [b, t_t, d] x [b, d, t_s] = [b, t_t, t_s]
-      neg_cent4 = torch.sum(-0.5 * (m_p ** 2) * s_p_sq_r, [1], keepdim=True) # [b, 1, t_s]
-      neg_cent = neg_cent1 + neg_cent2 + neg_cent3 + neg_cent4
+        # negative cross-entropy
+        s_p_sq_r = torch.exp(-2 * logs_p)  # [b, d, t]
+        neg_cent1 = torch.sum(
+            -0.5 * math.log(2 * math.pi) - logs_p, [1], keepdim=True
+        )  # [b, 1, t_s]
+        neg_cent2 = torch.matmul(
+            -0.5 * (z_p**2).transpose(1, 2), s_p_sq_r
+        )  # [b, t_t, d] x [b, d, t_s] = [b, t_t, t_s]
+        neg_cent3 = torch.matmul(
+            z_p.transpose(1, 2), (m_p * s_p_sq_r)
+        )  # [b, t_t, d] x [b, d, t_s] = [b, t_t, t_s]
+        neg_cent4 = torch.sum(
+            -0.5 * (m_p**2) * s_p_sq_r, [1], keepdim=True
+        )  # [b, 1, t_s]
+        neg_cent = neg_cent1 + neg_cent2 + neg_cent3 + neg_cent4
 
-      attn_mask = torch.unsqueeze(x_mask, 2) * torch.unsqueeze(y_mask, -1)
-      attn = monotonic_align.maximum_path(neg_cent, attn_mask.squeeze(1)).unsqueeze(1).detach()
+
+        attn_mask = torch.unsqueeze(x_mask, 2) * torch.unsqueeze(y_mask, -1)
+        attn = (
+            monotonic_align.maximum_path(neg_cent, attn_mask.squeeze(1))
+            .unsqueeze(1)
+            .detach()
+        )
 
     w = attn.sum(2)
     if self.use_sdp:
-      l_length = self.dp(x, x_mask, w, g=g)
-      l_length = l_length / torch.sum(x_mask)
+        l_length = self.dp(x, x_mask, w, g=g)
+        l_length = l_length / torch.sum(x_mask)
+        logw = self.dp(x, x_mask, g=g, reverse=True, noise_scale=1.0)
+        logw_ = torch.log(w + 1e-6) * x_mask
     else:
-      logw_ = torch.log(w + 1e-6) * x_mask
-      logw = self.dp(x, x_mask, g=g)
-      l_length = torch.sum((logw - logw_)**2, [1,2]) / torch.sum(x_mask) # for averaging 
+        logw_ = torch.log(w + 1e-6) * x_mask
+        logw = self.dp(x, x_mask, g=g)
+        l_length = torch.sum((logw - logw_) ** 2, [1, 2]) / torch.sum(
+            x_mask
+        )  # for averaging
 
     # expand prior
     m_p = torch.matmul(attn.squeeze(1), m_p.transpose(1, 2)).transpose(1, 2)
     logs_p = torch.matmul(attn.squeeze(1), logs_p.transpose(1, 2)).transpose(1, 2)
 
-    z_slice, ids_slice = commons.rand_slice_segments(z, y_lengths, self.segment_size)
+    z_slice, ids_slice = commons.rand_slice_segments(
+        z, y_lengths, self.segment_size
+    )
     o = self.dec(z_slice, g=g)
-    return o, l_length, attn, ids_slice, x_mask, y_mask, (z, z_p, m_p, logs_p, m_q, logs_q)
+    return (
+        o,
+        l_length,
+        attn,
+        ids_slice,
+        x_mask,
+        y_mask,
+        (z, z_p, m_p, logs_p, m_q, logs_q),
+        (x, logw, logw_),
+    )
+
 
   def infer(self, x, x_lengths, sid=None, noise_scale=1, length_scale=1, noise_scale_w=1., max_len=None):
     x, m_p, logs_p, x_mask = self.enc_p(x, x_lengths)
@@ -531,4 +632,3 @@ class SynthesizerTrn(nn.Module):
     z_hat = self.flow(z_p, y_mask, g=g_tgt, reverse=True)
     o_hat = self.dec(z_hat * y_mask, g=g_tgt)
     return o_hat, y_mask, (z, z_p, z_hat)
-

@@ -9,6 +9,7 @@ import commons
 from mel_processing import spectrogram_torch
 from utils import load_wav_to_torch, load_filepaths_and_text
 from text import text_to_sequence, cleaned_text_to_sequence
+from packaging import version
 
 
 class TextAudioLoader(torch.utils.data.Dataset):
@@ -75,7 +76,11 @@ class TextAudioLoader(torch.utils.data.Dataset):
 
         if os.path.exists(spec_filename):
             try:
-                spec = torch.load(spec_filename)
+                if version.parse(torch.__version__) >= version.parse("2"):
+                  spec = torch.load(spec_filename, weights_only=True)
+                else:
+                  spec = torch.load(spec_filename)
+
                 return spec, audio_norm
             except Exception as e:
                 print(f"Error loading {spec_filename}: {e}. Recomputing...")
@@ -232,7 +237,10 @@ class TextAudioSpeakerLoader(torch.utils.data.Dataset):
         audio_norm = audio_norm.unsqueeze(0)
         spec_filename = filename.replace(".wav", ".spec.pt")
         if os.path.exists(spec_filename):
-            spec = torch.load(spec_filename)
+            if version.parse(torch.__version__) >= version.parse("2"):
+                  spec = torch.load(spec_filename, weights_only=True)
+            else:
+              spec = torch.load(spec_filename)
         else:
             spec = spectrogram_torch(audio_norm, self.filter_length,
                 self.sampling_rate, self.hop_length, self.win_length,

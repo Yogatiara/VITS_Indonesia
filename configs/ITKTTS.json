@@ -18,8 +18,8 @@
     "c_kl": 1.0
   },
   "data": {
-    "training_files":"filelists/indonesian/ITKTTS_02/itktts_audio_text_train_filelist.txt.cleaned",
-    "validation_files":"filelists/indonesian/ITKTTS_02/itktts_audio_text_val_filelist.txt.cleaned",
+    "training_files":"filelists/indonesian/ITKTTS_test/itktts_audio_text_train_filelist.txt.cleaned",
+    "validation_files":"filelists/indonesian/ITKTTS_test/itktts_audio_text_val_filelist.txt.cleaned",
     "utterance_files": "dataset/ITKTTS-IDN/utterance",
     "text_cleaners":["indonesian_cleaners"],
     "audio_boundaries": [0],

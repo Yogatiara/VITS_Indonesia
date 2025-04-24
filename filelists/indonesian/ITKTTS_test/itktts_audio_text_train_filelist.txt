@@ -1,0 +1,80 @@
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0039.wav|ary suta mengatakan hal ini akan segera dilaporkan ke menteri keuangan boediono.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0012.wav|makasih atas bantuannya sebulan lalu.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0083.wav|ia menargetkan pada triwulan pertama tahun ini peraturan tersebut bisa disahkan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0049.wav|kalian boleh lihat saya tidak apa apa padahal saya juga mengonsumsi produk transgenik!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0064.wav|adnan buyung nasution meminta kepada hakim yang mengadili sidang tersebut menerima permohonan praperadilan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0098.wav|perampokan bca hampir bersamaan dengan peledakan di plaza hayam wuruk.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0018.wav|seratus perwira tinggi dan menengah polri menolak molitisasi polri.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0024.wav|namun sumber di polres metro menjelaskan mereka adalah wahyu agus dan khairul.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0031.wav|manusia diingatkan untuk membawa terang hidupnya kepada sesama di jalan yang dilalui.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0060.wav|apalagi saya nonton dengan jenderal ryamizard, ryacudu hasyim muzadi, saifulloh imam daruqutni, adiyaksa dan sebagainya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0063.wav|pemerintah menggunakan beberapa referensi, diantaranya dampak ekonomi setelah serangan teroris di luxor mesir pada bulan november.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0019.wav|alquran mengingatkan kita, bahwa pada diri nabi muhammad terdapat contoh yang sempurna.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0038.wav|apakah keputusan kabinet akan berpengaruh pada pencapaian target penerimaan bppn?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0030.wav|manusia selalu diingatkan untuk tetap mawas diri dan waspada terhadap alam sekitar.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0032.wav|renovasi sejumlah terminal dan stasiun kereta api di jakarta dimulai jumat ini.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0010.wav|alasannya belum mengerjakan pekerjaan rumah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0006.wav|jangan lupa sarapan ya!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0088.wav|secara verbal, masyarakat dididik untuk bersikap kesatria kata sultan hamengku buwono.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0095.wav|mereka adalah mulyo sugiarto dan kasaroh.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0040.wav|keempat korban sempat mendapat perawatan di sebuah klinik dan rumah sakit setempat.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0070.wav|masyarakat sudah lama merindukan polisi-polisi yang profesional!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0068.wav|bahkan bukan mustahil dalam dua tahun mendatang nanggroe aceh darussalam sudah mencapai kemajuan berarti.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0097.wav|pedagang kaki lima yang omzetnya jutaan rupiah tidak diperhatikan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0036.wav|pemerintah harus memprioritaskan proses hukum sesuai dengan asas keadilan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0046.wav|kepala bidang konsuler kbri khairul sulaiman dan stafnya oktaviano alimuddin mendampingi ketiga warga indonesia.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0009.wav|dia tidak datang ke sekolah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0066.wav|simmonds, mengatakan kinerja rupiah yang tak mengecewakan itu terjadi di tengah kondisi sulit yang dihadapi perekonomian indonesia.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0037.wav|bayi memerlukan otot kaki yang ekstra kuat untuk menjaga keseimbangan tubuh.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0072.wav|bagaimana jika saya sakit dan harus dioperasi!.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0022.wav|presiden padang press sekarang adalah khoirul jasmi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0081.wav|kenapa kapal itu langsung ditarik ke jakarta dan tidak dilimpahkan ke kotawaringin barat?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0048.wav|angka tertinggi dicapai album abba gold lebih dari 20 juta keping.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0086.wav|tekanan darah mario dan bernard menurun drastis.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0096.wav|dari ruang besuk itu, terlihat imam sedang shalat zuhur di dalam sel penjara.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0065.wav|bursa saham indonesia diperkirakan akan menjadi pasar dengan equity market terbaik di asia disusul malaysia, thailand, dan hongkong.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0069.wav|contoh darah dari kedua orang tua iqbal sudah diperiksa dan dicocokkan dengan jaringan dari tubuh jenazah yang diduga iqbal.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0034.wav|alex ferguson belum mau memisahkan duet penyerang ole gunnar solskjaer dan nistelrooy dari lapangan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0042.wav|pak hamzah baru berangkat pukul lima tepat katanya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0099.wav|reaksi yang sama, juga terjadi ketika polri berhasil menangkap tazul arifin pelaku pembacokan matori abdul jalil.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0023.wav|edmon tidak mau menyebutkan nama-nama karyawan tersebut.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0093.wav|malam itu, yuni menyanyikan lagu kesukaan maya, yaitu cinta yang kumau versi indonesia dari lagu ni ye te ai.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0094.wav|polisi kemarin membebaskan sepasang turis wanita, bersama suaminya warga spanyol.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0005.wav|nanti malam pulang jam berapa.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0003.wav|acara nontonnya jadi kan?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0045.wav|tiga warga indonesia ditangkap di bandara internasional ninoy aquino.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0021.wav|tayangan televisi yang kurang mendidik justru disukai masyarakat.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0050.wav|ujar goldstein, berpromosi kepada wartawan saat ditanya dampak negatif produk rekayasa genetika.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0062.wav|tiga puluh enam penumpang kereta api mutiara timur, jurusan surabaya banyuwangi, luka-luka akibat tiga gerbong anjlok di kawasan kecamatan rejoso.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0055.wav|sidang sempat diawali pembacaan surat oleh tim penasihat hukum juan felix tampubolon.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0092.wav|di satu sisi undang undang yang disahkan tersebut mengacu kepada hukum anglo saxon.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0008.wav|maaf saya terlambat datang ke kantor.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0004.wav|apakah kamu sudah makan siang?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0073.wav|tentu kalau umar al faroq tidak mungkin lah karena terlalu jauh katanya.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0047.wav|supaya rencana itu tidak mubazir, sebaiknya pemerintah membuat peraturan pemerintah pengggati undang undang.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0026.wav|menurut zainal, seluruh rangkaian kereta dari stasiun gambir ke arah timur sudah berangkat sesuai jadwal.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0020.wav|jam malam diberlakukan di kathmandu setelah penobatan pangeran gyanendra.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0091.wav|ini merupakan salah satu kesimpulan direktur executive.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0079.wav|setelah bersalaman dengan kyai haji faqih, mega mengulurkan tangannya kepada abdurrahman.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0015.wav|dimana tempat rapatnya?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0074.wav|detektor kuman portabel, yang bisa dengan cepat memeriksa instalasi yang dicurigai menyimpan anthrax wabah pes.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0035.wav|menurut umar juoro, sia sia memberikan waktu tiga bulan lagi kepada debitor.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0041.wav|seorang petugas keamanan bandara di bandara hasanuddin, membenarkan hal ini!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0061.wav|manajer hotel le meridien menanyakan apakah peserta setuju pada chauvinisme?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0043.wav|namun tambah tosari sikap dasar fraksi tidak akan jauh dari pendapat akhir yang disampaikan pada sidang paripurna dpr.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0058.wav|hamzah haz, hanya berucap itu urusan di sana bukan urusan kita!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0071.wav|sebelumnya kamboja mengungguli filipina satu nol.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0059.wav|dirjen bimas islam dan haji taufik kamil menyebutkan penyelenggara onh plus dinilai ingkar janji.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0089.wav|hal senada juga muncul dari menteri luar negeri alexander downer.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0082.wav|mengapa menteri kehutanan dan sejumlah pejabat negara langsung memvonis kayu itu ilegal?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0087.wav|adapun nancy, mengundurkan diri karena sakit setelah sebelumnya menerima kartu kuning karena terlambat datang sesudah ke toilet.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0100.wav|mereka diberangkatkan bersama dengan empat personel tim laboratorium forensik atau labfor.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0016.wav|acara akan diadakan di gedung sudirman lantai sepuluh.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0090.wav|menlu cina, tang jiaxuan dan sempat pula menyinggung masalah irak.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0001.wav|hai selamat pagi apa kabar?
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0076.wav|halimah menyempatkan untuk mencari box itu dan menghirupnya dalam dalam!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0077.wav|ketika kuatrianus hendak menelepon di wartel di halaman parkir bandara, penjahat radin melarikan tas dengan mobil feroza.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0057.wav|arif arryman adalah mantan staf ahli menko perekonomian pada era menko perekonomian rizal ramli.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0053.wav|dosen universitas cendrawasih, sedang melakukan perbandingan di india mengenai dihapuskannya pajak buku.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0078.wav|lanskap kota dalam liriknya mengingatkan orang pada kawasan pecinan di jakarta.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0029.wav|cungkilan paolo di canio disambut oleh sundulan jermain defoe ke gawang fabien barthez.

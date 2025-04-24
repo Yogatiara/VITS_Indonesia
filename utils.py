@@ -9,6 +9,7 @@ import numpy as np
 from scipy.io.wavfile import read
 import torch
 import soundfile as sf
+from packaging import version
 
 
 MATPLOTLIB_FLAG = False
@@ -19,8 +20,10 @@ logger = logging
 
 def load_checkpoint(checkpoint_path, model, optimizer=None):
   assert os.path.isfile(checkpoint_path)
-  # checkpoint_dict = torch.load(checkpoint_path, weights_only=True, map_location='cpu')
-  checkpoint_dict = torch.load(checkpoint_path, map_location='cpu')
+  if version.parse(torch.__version__) >= version.parse("2"):
+    checkpoint_dict = torch.load(checkpoint_path, weights_only=True, map_location='cpu')
+  else:
+    checkpoint_dict = torch.load(checkpoint_path, map_location='cpu')
   iteration = checkpoint_dict['iteration']
   learning_rate = checkpoint_dict['learning_rate']
   if optimizer is not None:

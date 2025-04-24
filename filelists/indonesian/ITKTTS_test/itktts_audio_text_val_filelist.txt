@@ -1,0 +1,20 @@
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0028.wav|bendera lama kerajaan berwarna merah hitam dan hijau.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0067.wav|dia menyatakan keyakinannya bahwa program pembangunan akan dapat dipacu di provinsi itu manakala kondisi kedamaian terpelihara.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0085.wav|tiga peserta yaitu mario juanito renaldy, agustine nancy runtuwene, dan bernard sihotang gugur di hari jumat karena alasan medis.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0054.wav|pemerintah indonesia, antara lain akan diwakili oleh menkeu boediono.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0007.wav|cepat istirahat dan mimpi yang indah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0013.wav|siapa kamu!. Saya tidak mengenal kamu!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0011.wav|jangan sampai pulang terlambat!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0017.wav|persoalan bangsa ini bukan hanya permasalahan gus dur dan mega.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0075.wav|sistem radar baru yang kuat, sehingga bisa menembus tanah guna mengetahui adanya terowongan atau bunker bawah tanah.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0052.wav|naskah ditandatangani ketua ha nazri adlani dan sekretaris umum din syamsuddin di masjid istiqlal.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0027.wav|mereka antara lain menyerang konvoi anggota alqaeda dan warga taliban.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0025.wav|mereka tertangkap saat melakukan transaksi di jalan raya galaxi jakasetia bekasi selatan.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0002.wav|semoga ujiannya berjalan lancar!
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0033.wav|manchester berada di puncak klasemen sepak bola liga inggris berkat gol tunggal ruud van nistelrooy ke gawang aston villa.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0044.wav|keputusannya nanti tentu tidak bisa dilepaskan dengan sounding sesama fraksi.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0014.wav|minggu depan ada main bola bareng anak kelas dua f.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0084.wav|jangan belum menghayati sudah langsung menolak!. kata nuwa wea.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0080.wav|kepala seksi gerakan tanah direktorat vulkanologi dan mitigasi bencana geologi, mengemukakan perubahan tata lahan penyebab banjir bandang.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0056.wav|rektor universitas muhammadiyah malang muhadjir effendi, mengatakan pembentukan komisi konstitusi hanya akan mendegradasikan lembaga legislatif.
+dataset/ITKTTS-IDN/utterance/ITKTTS001-0051.wav|zohra menilai monsanto sudah melakukan serangkaian penipuan dengan berlindung di balik petani.

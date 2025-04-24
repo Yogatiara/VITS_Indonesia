@@ -20,7 +20,7 @@ if __name__ == '__main__':
   parser.add_argument("--out_extension", default="cleaned")
   parser.add_argument("--text_index", default=1, type=int)
   parser.add_argument("--text_cleaners", nargs="+", default=["indonesian_cleaners"])
-  parser.add_argument("--filelist_folder_experiment", default="ITKTTS")
+  parser.add_argument("--filelist_folder_experiment", default="ITKTTS_test_100")
   parser.add_argument("--split_text_dir", nargs="+")
   parser.add_argument("--filelists", nargs="+")
 

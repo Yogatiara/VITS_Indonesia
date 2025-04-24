@@ -104,6 +104,6 @@ def indonesian_cleaners(text):
   text = convert_to_ascii(text)
   text = lowercase(text)
   # text = expand_abbreviations(text)
-  phonemes = phonemize(text, language='id', backend='espeak', strip=True, preserve_punctuation=True, with_stress=True)
+  phonemes = phonemize(text, language='id', backend='espeak', strip=True,  preserve_punctuation=True, with_stress=True)
   phonemes = collapse_whitespace(phonemes)
   return phonemes

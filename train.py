@@ -60,9 +60,8 @@ def main():
     print("-----Using 8-bit optimizer-----")
 
   os.environ['MASTER_ADDR'] = 'localhost'
-  # berubah
   os.environ['MASTER_PORT'] = hps.train.port
-
+  torch.cuda.empty_cache()
 
   mp.spawn(run, nprocs=n_gpus, args=(n_gpus, hps,))
 
@@ -110,7 +109,7 @@ def run(rank, n_gpus, hps):
   
   if hps.model.use_duration_discriminator:
     use_duration_discriminator = True
-    print("-----Using duration predictor-----")
+    print("-----Using duration predictor with discriminator-----")
     net_dur_disc = DurationDiscriminator(
       hps.model.hidden_channels,
       hps.model.hidden_channels,
@@ -170,7 +169,7 @@ def run(rank, n_gpus, hps):
         hps.train.learning_rate,
         betas=hps.train.betas,
         eps = hps.train.eps
-    ) 
+    )
     else:
       optim_dur_disc = None
     
@@ -346,7 +345,7 @@ def train_and_evaluate(n_gpus, rank, epoch, hps, nets, optims, schedulers, scale
         
         scalar_dict = {"loss/g/total": loss_gen_all, "loss/d/total": loss_disc_all, "learning_rate": lr, "grad_norm_d": grad_norm_d, "grad_norm_g": grad_norm_g}
         if net_dur_disc is not None:
-          scalar_dict.update({"loss/dur_disc/total": loss_dur_disc_all})
+          scalar_dict.update({"loss/dur_disc/total": loss_dur_disc_all, "grad_norm_dur_disc": grad_norm_dur_disc,})
 
         scalar_dict.update({"loss/g/fm": loss_fm, "loss/g/mel": loss_mel, "loss/g/dur": loss_dur, "loss/g/kl": loss_kl})
 

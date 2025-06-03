@@ -1,11 +1,11 @@
 {
   "train": {
     "log_interval": 50,
-    "eval_interval":50,
+    "eval_interval":250,
     "boundary_sorted_ckpts":3,
     "remove_model_ckpts": ["D_*.pth", "DUR_*.pth"],
     "seed": 1234,
-    "epochs": 1000,
+    "epochs": 5000,
     "learning_rate": 2e-4,
     "betas": [0.8, 0.99],
     "eps": 1e-9,
@@ -17,7 +17,7 @@
     "warmup_epochs": 0,
     "c_mel": 45,
     "c_kl": 1.0,
-    "eight_bit_optimizer":false,
+    "eight_bit_optimizer":true,
     "port": "8000"
 
   },
@@ -59,6 +59,6 @@
     "upsample_kernel_sizes": [16,16,4,4],
     "n_layers_q": 3,
     "use_spectral_norm": false,
-    "use_sdp": false
+    "use_sdp": true
   }
 }

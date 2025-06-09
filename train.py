@@ -19,7 +19,7 @@ from torch.cuda.amp import autocast, GradScaler
 import tqdm
 
 import commons
-import utils
+import model_utils
 from data_utils import (
   TextAudioLoader,
   TextAudioCollate,
@@ -48,7 +48,7 @@ use_duration_discriminator = False
 
 
 def main():
-  hps = utils.get_hparams()
+  hps = model_utils.get_hparams()
 
   """Assume Single Node Multi GPUs Training Only"""
   assert torch.cuda.is_available(), "CPU training is not allowed."
@@ -70,9 +70,9 @@ def run(rank, n_gpus, hps):
   global global_step, use_duration_discriminator
   
   if n_gpus <= 1 or rank == 0:
-    logger = utils.get_logger(hps.model_dir)
+    logger = model_utils.get_logger(hps.model_dir)
     logger.info(hps)
-    utils.check_git_hash(hps.model_dir)
+    model_utils.check_git_hash(hps.model_dir)
     writer = SummaryWriter(log_dir=hps.model_dir)
     writer_eval = SummaryWriter(log_dir=os.path.join(hps.model_dir, "eval"))
 
@@ -182,11 +182,11 @@ def run(rank, n_gpus, hps):
       net_dur_disc = DDP(net_dur_disc, device_ids=[rank])
 
   try:
-    _, _, _, epoch_str = utils.load_checkpoint(utils.latest_checkpoint_path(hps.model_dir, "G_*.pth"), net_g, optim_g)
-    _, _, _, epoch_str = utils.load_checkpoint(utils.latest_checkpoint_path(hps.model_dir, "D_*.pth"), net_d, optim_d)
+    _, _, _, epoch_str = model_utils.load_checkpoint(model_utils.latest_checkpoint_path(hps.model_dir, "G_*.pth"), net_g, optim_g)
+    _, _, _, epoch_str = model_utils.load_checkpoint(model_utils.latest_checkpoint_path(hps.model_dir, "D_*.pth"), net_d, optim_d)
 
     if net_dur_disc is not None:
-       _, _, _, epoch_str = utils.load_checkpoint(utils.latest_checkpoint_path(hps.model_dir, "DUR_*.pth"), net_dur_disc, optim_dur_disc)
+       _, _, _, epoch_str = model_utils.load_checkpoint(model_utils.latest_checkpoint_path(hps.model_dir, "DUR_*.pth"), net_dur_disc, optim_dur_disc)
     global_step = (epoch_str - 1) * len(train_loader)
   except:
     epoch_str = 1
@@ -359,12 +359,12 @@ def train_and_evaluate(n_gpus, rank, epoch, hps, nets, optims, schedulers, scale
           scalar_dict.update({"loss/d_disc_g/{}".format(i): v for i, v in enumerate(losses_disc_g)})
 
         image_dict = { 
-            "slice/mel_org": utils.plot_spectrogram_to_numpy(y_mel[0].data.cpu().numpy()),
-            "slice/mel_gen": utils.plot_spectrogram_to_numpy(y_hat_mel[0].data.cpu().numpy()), 
-            "all/mel": utils.plot_spectrogram_to_numpy(mel[0].data.cpu().numpy()),
-            "all/attn": utils.plot_alignment_to_numpy(attn[0,0].data.cpu().numpy())
+            "slice/mel_org": model_utils.plot_spectrogram_to_numpy(y_mel[0].data.cpu().numpy()),
+            "slice/mel_gen": model_utils.plot_spectrogram_to_numpy(y_hat_mel[0].data.cpu().numpy()), 
+            "all/mel": model_utils.plot_spectrogram_to_numpy(mel[0].data.cpu().numpy()),
+            "all/attn": model_utils.plot_alignment_to_numpy(attn[0,0].data.cpu().numpy())
         }
-        utils.summarize(
+        model_utils.summarize(
           writer=writer,
           global_step=global_step, 
           images=image_dict,
@@ -372,12 +372,12 @@ def train_and_evaluate(n_gpus, rank, epoch, hps, nets, optims, schedulers, scale
 
       if global_step % hps.train.eval_interval == 0:
         evaluate(n_gpus, hps, net_g, eval_loader, writer_eval)
-        utils.save_checkpoint(net_g, optim_g, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "G_{}.pth".format(global_step)))
-        utils.save_checkpoint(net_d, optim_d, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "D_{}.pth".format(global_step)))
+        model_utils.save_checkpoint(net_g, optim_g, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "G_{}.pth".format(global_step)))
+        model_utils.save_checkpoint(net_d, optim_d, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "D_{}.pth".format(global_step)))
 
         if net_dur_disc is not None:
-          utils.save_checkpoint(net_dur_disc, optim_dur_disc, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "DUR_{}.pth".format(global_step)))
-        utils.remove_old_checkpoints(hps.model_dir,hps.train.boundary_sorted_ckpts, prefixes=hps.train.remove_model_ckpts)
+          model_utils.save_checkpoint(net_dur_disc, optim_dur_disc, hps.train.learning_rate, epoch, os.path.join(hps.model_dir, "DUR_{}.pth".format(global_step)))
+        model_utils.remove_old_checkpoints(hps.model_dir,hps.train.boundary_sorted_ckpts, prefixes=hps.train.remove_model_ckpts)
     global_step += 1
   
   if n_gpus <= 1 or rank == 0:
@@ -424,16 +424,16 @@ def evaluate(n_gpus, hps, generator, eval_loader, writer_eval):
         hps.data.mel_fmax
       )
     image_dict = {
-      "gen/mel": utils.plot_spectrogram_to_numpy(y_hat_mel[0].cpu().numpy())
+      "gen/mel": model_utils.plot_spectrogram_to_numpy(y_hat_mel[0].cpu().numpy())
     }
     audio_dict = {
       "gen/audio": y_hat[0,:,:y_hat_lengths[0]]
     }
     if global_step == 0:
-      image_dict.update({"gt/mel": utils.plot_spectrogram_to_numpy(mel[0].cpu().numpy())})
+      image_dict.update({"gt/mel": model_utils.plot_spectrogram_to_numpy(mel[0].cpu().numpy())})
       audio_dict.update({"gt/audio": y[0,:,:y_lengths[0]]})
 
-    utils.summarize(
+    model_utils.summarize(
       writer=writer_eval,
       global_step=global_step, 
       images=image_dict,

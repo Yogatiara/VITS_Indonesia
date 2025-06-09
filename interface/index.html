@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TTS Inference</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+      label,
+      input,
+      textarea {
+        display: block;
+        margin: 10px 0;
+      }
+      audio {
+        margin-top: 20px;
+        width: 100%;
+      }
+      #loading {
+        display: none;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: auto;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Text to Speech (TTS) Inference</h2>
+
+    <form id="tts-form">
+      <label for="text">Teks:</label>
+      <textarea id="text" name="text" rows="3" required></textarea>
+
+      <label
+        ><input type="checkbox" name="small_model" /> Gunakan model kecil</label
+      >
+      <label
+        ><input type="checkbox" name="DP_adversarial_learning" /> DP Adversarial
+        Learning</label
+      >
+      <label><input type="checkbox" name="SDP" /> Gunakan SDP</label>
+
+      <button type="submit">Inferensi</button>
+    </form>
+
+    <div id="loading">
+      <div class="spinner"></div>
+      <p>Memproses audio, harap tunggu...</p>
+    </div>
+
+    <div id="result" style="display: none">
+      <h3>Hasil Audio</h3>
+      <p><strong>Sample rate:</strong> <span id="sample_rate"></span></p>
+      <p><strong>Durasi:</strong> <span id="duration"></span> detik</p>
+      <p><strong>Encoding:</strong> <span id="encoding"></span></p>
+      <audio id="audio" controls></audio>
+    </div>
+
+    <script>
+      const form = document.getElementById("tts-form");
+      const loading = document.getElementById("loading");
+      const result = document.getElementById("result");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        loading.style.display = "block";
+        result.style.display = "none";
+
+        const formData = new FormData(form);
+        formData.set("small_model", form.small_model.checked);
+        formData.set(
+          "DP_adversarial_learning",
+          form.DP_adversarial_learning.checked
+        );
+        formData.set("SDP", form.SDP.checked);
+
+        try {
+          const response = await fetch("/inference", {
+            method: "POST",
+            body: formData,
+          });
+
+          const json = await response.json();
+
+          if (response.ok) {
+            const data = json.data;
+            document.getElementById("sample_rate").textContent =
+              data.sample_rate;
+            document.getElementById("duration").textContent =
+              data.duration_seconds;
+            document.getElementById("encoding").textContent = data.encoding;
+            document.getElementById("audio").src = "/audio/generate.wav";
+            result.style.display = "block";
+          } else {
+            alert("Gagal: " + (json.detail || "Terjadi kesalahan."));
+          }
+        } catch (err) {
+          alert("Gagal terkoneksi ke server.");
+        } finally {
+          loading.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>

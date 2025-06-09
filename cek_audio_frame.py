@@ -6,14 +6,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 from tqdm import tqdm
 
-import utils
+import model_utils
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--configure_path", default="configs/ITKTTS.json")
 
     args = parser.parse_args()
-    hps = utils.get_hparams_from_file(args.configure_path)
+    hps = model_utils.get_hparams_from_file(args.configure_path)
     logging.getLogger('matplotlib.font_manager').disabled = True
     audio_files = glob.glob(f"{hps.data.utterance_files}/*.wav")  
     hop_length = hps.data.hop_length

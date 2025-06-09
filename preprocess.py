@@ -4,9 +4,9 @@ import time
 import librosa
 import text
 import soundfile as sf
-import utils
+import model_utils
 import random
-from utils import load_filepaths_and_text
+from model_utils import load_filepaths_and_text
 from tqdm import tqdm
 
 
@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
 
   args = parser.parse_args()
-  hps = utils.get_hparams_from_file(args.configure_path)
+  hps = model_utils.get_hparams_from_file(args.configure_path)
   trimming_done = False
 
   if args.split_text_dir is None:
